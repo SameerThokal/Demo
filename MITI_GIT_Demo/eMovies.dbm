@@ -1,0 +1,1034 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<xmi:XMI xmlns:datamodelversion="http://www.ibm.com/com.ibm.datatools.core/model/data/1.9.0.0" xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:DB2Model="http:///com/ibm/db/models/db2/db2.ecore" xmlns:LUW="http:///com/ibm/db/models/db2/luw.ecore" xmlns:SQLConstraints="http:///org/eclipse/datatools/modelbase/sql/constraints.ecore" xmlns:SQLDataTypes="http:///org/eclipse/datatools/modelbase/sql/datatypes.ecore" xmlns:SQLExpressions="http:///org/eclipse/datatools/modelbase/sql/expressions.ecore" xmlns:Volumetrics="http:///com/ibm/db/models/volumetrics/volumetrics.ecore" xmlns:dimensional="http://com/ibm/db/models/dimensional/1.0.0/Dimensional.ecore">
+  <LUW:LUWDatabase xmi:id="_utCnMJ3ZEeefTMjDv22V2g" name="EMOVIES  7.1" description="This is the standard eMovies model distributed with CA AllFusion ERwin Data Modeler with additional definitions addes for testing by MITI." vendor="DB2 UDB" version="V10.5" schemas="_utHfsJ3ZEeefTMjDv22V2g">
+    <eAnnotations xmi:id="_uuQIJ53ZEeefTMjDv22V2g" source="DATABASE_DOCUMENTATION_EANNOTATION">
+      <details xmi:id="_uuQIKJ3ZEeefTMjDv22V2g" key="DATABASE_DOCUMENTATION_EANNOTATION_CONTENT" value="This is the standard eMovies model distributed with CA AllFusion ERwin Data Modeler with additional definitions addes for testing by MITI."/>
+    </eAnnotations>
+  </LUW:LUWDatabase>
+  <DB2Model:DB2Schema xmi:id="_utHfsJ3ZEeefTMjDv22V2g" name="Schema1" description="" indices="_uuNE0J3ZEeefTMjDv22V2g _uuNE0p3ZEeefTMjDv22V2g _uuNE1J3ZEeefTMjDv22V2g _uuNE1p3ZEeefTMjDv22V2g _uuNE2J3ZEeefTMjDv22V2g _uuNE2p3ZEeefTMjDv22V2g _uuNE3J3ZEeefTMjDv22V2g _uuNr4J3ZEeefTMjDv22V2g _uuNr4p3ZEeefTMjDv22V2g _uuNr5J3ZEeefTMjDv22V2g _uuNr5p3ZEeefTMjDv22V2g _uuNr6J3ZEeefTMjDv22V2g _uuNr6p3ZEeefTMjDv22V2g _uuNr7J3ZEeefTMjDv22V2g _uuNr7p3ZEeefTMjDv22V2g _uuNr8J3ZEeefTMjDv22V2g _uuOS8Z3ZEeefTMjDv22V2g _uuOS853ZEeefTMjDv22V2g _uuOS9Z3ZEeefTMjDv22V2g _uuOS953ZEeefTMjDv22V2g _uuOS-Z3ZEeefTMjDv22V2g _uuOS-53ZEeefTMjDv22V2g _uuOS_p3ZEeefTMjDv22V2g _uuO6AJ3ZEeefTMjDv22V2g _uuO6A53ZEeefTMjDv22V2g _uuO6BZ3ZEeefTMjDv22V2g _uuO6B53ZEeefTMjDv22V2g _uuO6Cp3ZEeefTMjDv22V2g _uuO6DJ3ZEeefTMjDv22V2g _uuO6Dp3ZEeefTMjDv22V2g _uuO6EJ3ZEeefTMjDv22V2g _uuPhEJ3ZEeefTMjDv22V2g _uuPhE53ZEeefTMjDv22V2g _uuPhGp3ZEeefTMjDv22V2g _uuPhHJ3ZEeefTMjDv22V2g _uuPhHp3ZEeefTMjDv22V2g _uuPhIJ3ZEeefTMjDv22V2g" tables="_utiWcJ3ZEeefTMjDv22V2g _utkysJ3ZEeefTMjDv22V2g _utmA0J3ZEeefTMjDv22V2g _utmn4J3ZEeefTMjDv22V2g _utnO8J3ZEeefTMjDv22V2g _utpEIJ3ZEeefTMjDv22V2g _utprMJ3ZEeefTMjDv22V2g _utqSQJ3ZEeefTMjDv22V2g _utq5UJ3ZEeefTMjDv22V2g _utq5aZ3ZEeefTMjDv22V2g _utrgbp3ZEeefTMjDv22V2g _utsHcJ3ZEeefTMjDv22V2g _uttVkJ3ZEeefTMjDv22V2g _utwY4J3ZEeefTMjDv22V2g _utyOEJ3ZEeefTMjDv22V2g" database="_utCnMJ3ZEeefTMjDv22V2g"/>
+  <LUW:LUWTable xmi:id="_utiWcJ3ZEeefTMjDv22V2g" name="E_PAYMENT" description="E-PAYMENT is a mode of payment." label="E-PAYMENT" schema="_utHfsJ3ZEeefTMjDv22V2g" index="_uuNE3J3ZEeefTMjDv22V2g _uuPhGp3ZEeefTMjDv22V2g">
+    <extensions xsi:type="Volumetrics:RecordVolumetrics" xmi:id="_utiWcZ3ZEeefTMjDv22V2g"/>
+    <extensions xsi:type="dimensional:Fact" xmi:id="_utiWcp3ZEeefTMjDv22V2g" userDefined="true"/>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_utiWc53ZEeefTMjDv22V2g" name="payment_transaction_number" description="Unique number associated with the payment." label="payment transaction number" nullable="false" defaultValue="">
+      <dependencies xmi:id="_utiWdJ3ZEeefTMjDv22V2g" name="Dependency_payment transaction number" dependencyType="TRANSFORM TRACEABILITY">
+        <targetEnd href="eMovies.ldm#_uqC9kZ3ZEeefTMjDv22V2g"/>
+      </dependencies>
+      <containedType xsi:type="SQLDataTypes:IntegerDataType" xmi:id="_uti9gJ3ZEeefTMjDv22V2g" name="INTEGER" primitiveType="INTEGER"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_uti9gZ3ZEeefTMjDv22V2g" name="epay_vendor_number" description="Defines the vendor associated with the customer's electronic payment." label="epay vendor number" defaultValue="">
+      <dependencies xmi:id="_uti9gp3ZEeefTMjDv22V2g" name="Dependency_epay vendor number" dependencyType="TRANSFORM TRACEABILITY">
+        <targetEnd href="eMovies.ldm#_uqC9kp3ZEeefTMjDv22V2g"/>
+      </dependencies>
+      <containedType xsi:type="SQLDataTypes:IntegerDataType" xmi:id="_uti9g53ZEeefTMjDv22V2g" name="INTEGER" primitiveType="INTEGER"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_uti9hJ3ZEeefTMjDv22V2g" name="epay_account_number" description="Defines the customer's account associated with the electronic payment." label="epay account number" defaultValue="">
+      <dependencies xmi:id="_uti9hZ3ZEeefTMjDv22V2g" name="Dependency_epay account number" dependencyType="TRANSFORM TRACEABILITY">
+        <targetEnd href="eMovies.ldm#_uqC9k53ZEeefTMjDv22V2g"/>
+      </dependencies>
+      <containedType xsi:type="SQLDataTypes:IntegerDataType" xmi:id="_uti9hp3ZEeefTMjDv22V2g" name="INTEGER" primitiveType="INTEGER"/>
+    </columns>
+    <constraints xsi:type="SQLConstraints:PrimaryKey" xmi:id="_utjkkJ3ZEeefTMjDv22V2g" name="XPKE_PAYMENT" description="" label="XPKE-PAYMENT" members="_utiWc53ZEeefTMjDv22V2g"/>
+    <constraints xsi:type="SQLConstraints:ForeignKey" xmi:id="_ut3GkJ3ZEeefTMjDv22V2g" name="is_a" description="" label="Foreign Key2" members="_utiWc53ZEeefTMjDv22V2g" onUpdate="CASCADE" onDelete="CASCADE" uniqueConstraint="_utq5aJ3ZEeefTMjDv22V2g" referencedTable="_utq5UJ3ZEeefTMjDv22V2g">
+      <eAnnotations xmi:id="_ut3GkZ3ZEeefTMjDv22V2g" source="FK_MODELING_RELATIONSHIP">
+        <details xmi:id="_ut3Gkp3ZEeefTMjDv22V2g" key="FK_IS_GENERALIZATION" value="true"/>
+        <details xmi:id="_ut3Gk53ZEeefTMjDv22V2g" key="FK_IS_IDENTIFYING_RELATIONSHIP" value="true"/>
+        <details xmi:id="_ut3GlJ3ZEeefTMjDv22V2g" key="FK_PARENT_ROLE_NAME" value=""/>
+        <details xmi:id="_ut3GlZ3ZEeefTMjDv22V2g" key="FK_PARENT_MULTIPLICITY" value="1"/>
+        <details xmi:id="_ut3Glp3ZEeefTMjDv22V2g" key="FK_CHILD_ROLE_NAME" value="is a"/>
+        <details xmi:id="_ut3Gl53ZEeefTMjDv22V2g" key="FK_CHILD_MULTIPLICITY" value="0..1"/>
+      </eAnnotations>
+    </constraints>
+  </LUW:LUWTable>
+  <LUW:LUWTable xmi:id="_utkysJ3ZEeefTMjDv22V2g" name="EMPLOYEE" description="An EMPLOYEE is a person that works for the VIDEO STORE." label="EMPLOYEE" schema="_utHfsJ3ZEeefTMjDv22V2g" index="_uuNE0J3ZEeefTMjDv22V2g _uuNE2p3ZEeefTMjDv22V2g _uuNr6p3ZEeefTMjDv22V2g _uuNr7J3ZEeefTMjDv22V2g _uuOS_p3ZEeefTMjDv22V2g" referencingForeignKeys="_ut0qXZ3ZEeefTMjDv22V2g _ut1Rc53ZEeefTMjDv22V2g _ut2fgZ3ZEeefTMjDv22V2g">
+    <extensions xsi:type="Volumetrics:RecordVolumetrics" xmi:id="_utlZwJ3ZEeefTMjDv22V2g"/>
+    <extensions xsi:type="dimensional:Dimension" xmi:id="_utlZwZ3ZEeefTMjDv22V2g" userDefined="true"/>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_utlZwp3ZEeefTMjDv22V2g" name="employee_first_name" description="Employee's name." label="employee first name" defaultValue="">
+      <eAnnotations xmi:id="_utlZw53ZEeefTMjDv22V2g" source="ColumnDomain">
+        <details xmi:id="_utlZxJ3ZEeefTMjDv22V2g" key="DomainName" value="file:/D:/TEST/DemoWorkspace/MITI_GIT_Demo/eMovies.ldm?/EMOVIES  7.1/&lt;&lt;Domains>>/first name"/>
+      </eAnnotations>
+      <dependencies xmi:id="_utlZxZ3ZEeefTMjDv22V2g" name="Dependency_employee first name" dependencyType="TRANSFORM TRACEABILITY">
+        <targetEnd href="eMovies.ldm#_uqFZ1p3ZEeefTMjDv22V2g"/>
+      </dependencies>
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_utlZxp3ZEeefTMjDv22V2g" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="20"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_utlZx53ZEeefTMjDv22V2g" name="soc_sec_number" description="Social Security Number." label="soc sec number" defaultValue="">
+      <dependencies xmi:id="_utlZyJ3ZEeefTMjDv22V2g" name="Dependency_soc sec number" dependencyType="TRANSFORM TRACEABILITY">
+        <targetEnd href="eMovies.ldm#_uqFZ153ZEeefTMjDv22V2g"/>
+      </dependencies>
+      <containedType xsi:type="SQLDataTypes:IntegerDataType" xmi:id="_utlZyZ3ZEeefTMjDv22V2g" name="INTEGER" primitiveType="INTEGER"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_utlZyp3ZEeefTMjDv22V2g" name="hire_date" description="Employee's date of hire at the video store." label="hire date" defaultValue="">
+      <dependencies xmi:id="_utlZy53ZEeefTMjDv22V2g" name="Dependency_hire date" dependencyType="TRANSFORM TRACEABILITY">
+        <targetEnd href="eMovies.ldm#_uqFZ2J3ZEeefTMjDv22V2g"/>
+      </dependencies>
+      <containedType xsi:type="SQLDataTypes:IntegerDataType" xmi:id="_utlZzJ3ZEeefTMjDv22V2g" name="SMALLINT" primitiveType="SMALLINT" precision="8"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_utlZzZ3ZEeefTMjDv22V2g" name="employee_address" description="First line of employee's address." label="employee address" defaultValue="">
+      <eAnnotations xmi:id="_utlZzp3ZEeefTMjDv22V2g" source="ColumnDomain">
+        <details xmi:id="_utlZz53ZEeefTMjDv22V2g" key="DomainName" value="file:/D:/TEST/DemoWorkspace/MITI_GIT_Demo/eMovies.ldm?/EMOVIES  7.1/&lt;&lt;Domains>>/address"/>
+      </eAnnotations>
+      <dependencies xmi:id="_utlZ0J3ZEeefTMjDv22V2g" name="Dependency_employee address" dependencyType="TRANSFORM TRACEABILITY">
+        <targetEnd href="eMovies.ldm#_uqFZ2Z3ZEeefTMjDv22V2g"/>
+      </dependencies>
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_utlZ0Z3ZEeefTMjDv22V2g" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="20"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_utlZ0p3ZEeefTMjDv22V2g" name="salary" description="Annual salary paid to the employee." label="salary" defaultValue="">
+      <dependencies xmi:id="_utlZ053ZEeefTMjDv22V2g" name="Dependency_salary" dependencyType="TRANSFORM TRACEABILITY">
+        <targetEnd href="eMovies.ldm#_uqFZ2p3ZEeefTMjDv22V2g"/>
+      </dependencies>
+      <containedType xsi:type="SQLDataTypes:IntegerDataType" xmi:id="_utlZ1J3ZEeefTMjDv22V2g" name="INTEGER" primitiveType="INTEGER"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_utlZ1Z3ZEeefTMjDv22V2g" name="email" description="Email address of the employee." label="email" defaultValue="">
+      <dependencies xmi:id="_utlZ1p3ZEeefTMjDv22V2g" name="Dependency_email" dependencyType="TRANSFORM TRACEABILITY">
+        <targetEnd href="eMovies.ldm#_uqFZ253ZEeefTMjDv22V2g"/>
+      </dependencies>
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_utlZ153ZEeefTMjDv22V2g" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="20"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_utlZ2J3ZEeefTMjDv22V2g" name="store_number" description="A unique number that identifies the store in which the employee works." label="store number" nullable="false" defaultValue="">
+      <dependencies xmi:id="_utlZ2Z3ZEeefTMjDv22V2g" name="Dependency_store number" dependencyType="TRANSFORM TRACEABILITY">
+        <targetEnd href="eMovies.ldm#_uqFZ3J3ZEeefTMjDv22V2g"/>
+      </dependencies>
+      <containedType xsi:type="SQLDataTypes:IntegerDataType" xmi:id="_utlZ2p3ZEeefTMjDv22V2g" name="INTEGER" primitiveType="INTEGER"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_utlZ253ZEeefTMjDv22V2g" name="employee_phone" description="Employee's home phone number." label="employee phone" defaultValue="">
+      <eAnnotations xmi:id="_utlZ3J3ZEeefTMjDv22V2g" source="ColumnDomain">
+        <details xmi:id="_utlZ3Z3ZEeefTMjDv22V2g" key="DomainName" value="file:/D:/TEST/DemoWorkspace/MITI_GIT_Demo/eMovies.ldm?/EMOVIES  7.1/&lt;&lt;Domains>>/phone"/>
+      </eAnnotations>
+      <dependencies xmi:id="_utlZ3p3ZEeefTMjDv22V2g" name="Dependency_employee phone" dependencyType="TRANSFORM TRACEABILITY">
+        <targetEnd href="eMovies.ldm#_uqFZ3Z3ZEeefTMjDv22V2g"/>
+      </dependencies>
+      <containedType xsi:type="SQLDataTypes:IntegerDataType" xmi:id="_utlZ353ZEeefTMjDv22V2g" name="INTEGER" primitiveType="INTEGER"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_utlZ4J3ZEeefTMjDv22V2g" name="employee_address_2" description="Second line of the street address of the employee." label="employee address 2" defaultValue="">
+      <eAnnotations xmi:id="_utlZ4Z3ZEeefTMjDv22V2g" source="ColumnDomain">
+        <details xmi:id="_utlZ4p3ZEeefTMjDv22V2g" key="DomainName" value="file:/D:/TEST/DemoWorkspace/MITI_GIT_Demo/eMovies.ldm?/EMOVIES  7.1/&lt;&lt;Domains>>/address 2"/>
+      </eAnnotations>
+      <dependencies xmi:id="_utlZ453ZEeefTMjDv22V2g" name="Dependency_employee address 2" dependencyType="TRANSFORM TRACEABILITY">
+        <targetEnd href="eMovies.ldm#_uqFZ3p3ZEeefTMjDv22V2g"/>
+      </dependencies>
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_utlZ5J3ZEeefTMjDv22V2g" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="20"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_utlZ5Z3ZEeefTMjDv22V2g" name="employee_number" description="A unique number that identifies the employee." label="employee number" nullable="false" defaultValue="">
+      <dependencies xmi:id="_utlZ5p3ZEeefTMjDv22V2g" name="Dependency_employee number" dependencyType="TRANSFORM TRACEABILITY">
+        <targetEnd href="eMovies.ldm#_uqFZ1Z3ZEeefTMjDv22V2g"/>
+      </dependencies>
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_utlZ553ZEeefTMjDv22V2g" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="20"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_utlZ6J3ZEeefTMjDv22V2g" name="supervisor" description="A unique number that identifies the employee." label="supervisor" nullable="false" defaultValue="">
+      <dependencies xmi:id="_utlZ6Z3ZEeefTMjDv22V2g" name="Dependency_supervisor" dependencyType="TRANSFORM TRACEABILITY">
+        <targetEnd href="eMovies.ldm#_uqFZ353ZEeefTMjDv22V2g"/>
+      </dependencies>
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_utlZ6p3ZEeefTMjDv22V2g" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="20"/>
+    </columns>
+    <constraints xsi:type="SQLConstraints:PrimaryKey" xmi:id="_utlZ653ZEeefTMjDv22V2g" name="XPKEMPLOYEE" description="" label="XPKEMPLOYEE" members="_utlZ5Z3ZEeefTMjDv22V2g" ForeignKey="_ut0qXZ3ZEeefTMjDv22V2g _ut2fgZ3ZEeefTMjDv22V2g"/>
+    <constraints xsi:type="SQLConstraints:UniqueConstraint" xmi:id="_utlZ7J3ZEeefTMjDv22V2g" name="XAK1EMPLOYEE" description="" label="XAK1EMPLOYEE" members="_utlZx53ZEeefTMjDv22V2g _utlZ253ZEeefTMjDv22V2g" ForeignKey="_ut1Rc53ZEeefTMjDv22V2g"/>
+    <constraints xsi:type="SQLConstraints:ForeignKey" xmi:id="_ut0DSJ3ZEeefTMjDv22V2g" name="employs" description="" label="XIF1EMPLOYEE" members="_utlZ2J3ZEeefTMjDv22V2g" uniqueConstraint="_uttVuZ3ZEeefTMjDv22V2g" referencedTable="_uttVkJ3ZEeefTMjDv22V2g">
+      <eAnnotations xmi:id="_ut0DSZ3ZEeefTMjDv22V2g" source="FK_MODELING_RELATIONSHIP">
+        <details xmi:id="_ut0DSp3ZEeefTMjDv22V2g" key="FK_IS_IDENTIFYING_RELATIONSHIP" value="false"/>
+        <details xmi:id="_ut0DS53ZEeefTMjDv22V2g" key="FK_PARENT_ROLE_NAME" value="employs"/>
+        <details xmi:id="_ut0DTJ3ZEeefTMjDv22V2g" key="FK_PARENT_MULTIPLICITY" value="0..1"/>
+        <details xmi:id="_ut0DTZ3ZEeefTMjDv22V2g" key="FK_CHILD_ROLE_NAME" value="is employed by"/>
+        <details xmi:id="_ut0DTp3ZEeefTMjDv22V2g" key="FK_CHILD_MULTIPLICITY" value="*"/>
+      </eAnnotations>
+    </constraints>
+    <constraints xsi:type="SQLConstraints:ForeignKey" xmi:id="_ut0qXZ3ZEeefTMjDv22V2g" name="reports_to" description="" label="XIF2EMPLOYEE" members="_utlZ6J3ZEeefTMjDv22V2g" uniqueConstraint="_utlZ653ZEeefTMjDv22V2g" referencedTable="_utkysJ3ZEeefTMjDv22V2g">
+      <eAnnotations xmi:id="_ut0qXp3ZEeefTMjDv22V2g" source="FK_MODELING_RELATIONSHIP">
+        <details xmi:id="_ut0qX53ZEeefTMjDv22V2g" key="FK_IS_IDENTIFYING_RELATIONSHIP" value="false"/>
+        <details xmi:id="_ut0qYJ3ZEeefTMjDv22V2g" key="FK_PARENT_ROLE_NAME" value="reports to"/>
+        <details xmi:id="_ut0qYZ3ZEeefTMjDv22V2g" key="FK_PARENT_MULTIPLICITY" value="0..1"/>
+        <details xmi:id="_ut0qYp3ZEeefTMjDv22V2g" key="FK_CHILD_ROLE_NAME" value="supervises"/>
+        <details xmi:id="_ut0qY53ZEeefTMjDv22V2g" key="FK_CHILD_MULTIPLICITY" value="*"/>
+      </eAnnotations>
+    </constraints>
+  </LUW:LUWTable>
+  <LUW:LUWTable xmi:id="_utmA0J3ZEeefTMjDv22V2g" name="RECEIPT_OUTRIGGER" description="A receipt is created with a receipt number for each payment made at a given store" label="RECEIPT_OUTRIGGER" schema="_utHfsJ3ZEeefTMjDv22V2g" index="_uuNr8J3ZEeefTMjDv22V2g _uuOS853ZEeefTMjDv22V2g _uuO6Dp3ZEeefTMjDv22V2g">
+    <extensions xsi:type="Volumetrics:RecordVolumetrics" xmi:id="_utmA0Z3ZEeefTMjDv22V2g"/>
+    <extensions xsi:type="dimensional:Outrigger" xmi:id="_utmA0p3ZEeefTMjDv22V2g" userDefined="true"/>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_utmA053ZEeefTMjDv22V2g" name="receipt_number" description="Number for receipt printed in association with a payment at a store" label="receipt_number" nullable="false" defaultValue="">
+      <containedType xsi:type="SQLDataTypes:IntegerDataType" xmi:id="_utmA1J3ZEeefTMjDv22V2g" name="SMALLINT" primitiveType="SMALLINT"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_utmA1Z3ZEeefTMjDv22V2g" name="payment_transaction_number" description="The unique number associated with the payment." label="payment transaction number" defaultValue="">
+      <containedType xsi:type="SQLDataTypes:IntegerDataType" xmi:id="_utmA1p3ZEeefTMjDv22V2g" name="INTEGER" primitiveType="INTEGER"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_utmA153ZEeefTMjDv22V2g" name="store_number" description="A unique identifier of the video store." label="store number" defaultValue="">
+      <containedType xsi:type="SQLDataTypes:IntegerDataType" xmi:id="_utmA2J3ZEeefTMjDv22V2g" name="INTEGER" primitiveType="INTEGER"/>
+    </columns>
+    <constraints xsi:type="SQLConstraints:PrimaryKey" xmi:id="_utmA2Z3ZEeefTMjDv22V2g" name="XPKRECEIPT_OUTRIGGER" description="" label="Primary Key" members="_utmA053ZEeefTMjDv22V2g"/>
+    <constraints xsi:type="SQLConstraints:ForeignKey" xmi:id="_ut0qVp3ZEeefTMjDv22V2g" name="R_20" description="" label="Foreign Key1" members="_utmA1Z3ZEeefTMjDv22V2g" onUpdate="SET_NULL" onDelete="SET_NULL" uniqueConstraint="_utq5aJ3ZEeefTMjDv22V2g" referencedTable="_utq5UJ3ZEeefTMjDv22V2g">
+      <eAnnotations xmi:id="_ut0qV53ZEeefTMjDv22V2g" source="FK_MODELING_RELATIONSHIP">
+        <details xmi:id="_ut0qWJ3ZEeefTMjDv22V2g" key="FK_IS_IDENTIFYING_RELATIONSHIP" value="false"/>
+        <details xmi:id="_ut0qWZ3ZEeefTMjDv22V2g" key="FK_PARENT_ROLE_NAME" value=""/>
+        <details xmi:id="_ut0qWp3ZEeefTMjDv22V2g" key="FK_PARENT_MULTIPLICITY" value="0..1"/>
+        <details xmi:id="_ut0qW53ZEeefTMjDv22V2g" key="FK_CHILD_ROLE_NAME" value=""/>
+        <details xmi:id="_ut0qXJ3ZEeefTMjDv22V2g" key="FK_CHILD_MULTIPLICITY" value="*"/>
+      </eAnnotations>
+    </constraints>
+    <constraints xsi:type="SQLConstraints:ForeignKey" xmi:id="_ut1RbJ3ZEeefTMjDv22V2g" name="R_21" description="" label="Foreign Key2" members="_utmA153ZEeefTMjDv22V2g" onUpdate="SET_NULL" onDelete="SET_NULL" uniqueConstraint="_uttVuZ3ZEeefTMjDv22V2g" referencedTable="_uttVkJ3ZEeefTMjDv22V2g">
+      <eAnnotations xmi:id="_ut1RbZ3ZEeefTMjDv22V2g" source="FK_MODELING_RELATIONSHIP">
+        <details xmi:id="_ut1Rbp3ZEeefTMjDv22V2g" key="FK_IS_IDENTIFYING_RELATIONSHIP" value="false"/>
+        <details xmi:id="_ut1Rb53ZEeefTMjDv22V2g" key="FK_PARENT_ROLE_NAME" value=""/>
+        <details xmi:id="_ut1RcJ3ZEeefTMjDv22V2g" key="FK_PARENT_MULTIPLICITY" value="0..1"/>
+        <details xmi:id="_ut1RcZ3ZEeefTMjDv22V2g" key="FK_CHILD_ROLE_NAME" value=""/>
+        <details xmi:id="_ut1Rcp3ZEeefTMjDv22V2g" key="FK_CHILD_MULTIPLICITY" value="*"/>
+      </eAnnotations>
+    </constraints>
+  </LUW:LUWTable>
+  <LUW:LUWTable xmi:id="_utmn4J3ZEeefTMjDv22V2g" name="CUSTOMER" description="A person who has made a purchase from a store." label="CUSTOMER" schema="_utHfsJ3ZEeefTMjDv22V2g" index="_uuNr4J3ZEeefTMjDv22V2g _uuO6A53ZEeefTMjDv22V2g _uuPhHJ3ZEeefTMjDv22V2g" referencingForeignKeys="_ut14f53ZEeefTMjDv22V2g _ut2fiJ3ZEeefTMjDv22V2g">
+    <extensions xsi:type="Volumetrics:RecordVolumetrics" xmi:id="_utmn4Z3ZEeefTMjDv22V2g"/>
+    <extensions xsi:type="dimensional:Outrigger" xmi:id="_utmn4p3ZEeefTMjDv22V2g" userDefined="true"/>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_utmn453ZEeefTMjDv22V2g" name="customer_number" description="A unique number associated with a customer." label="customer number" nullable="false" defaultValue="">
+      <dependencies xmi:id="_utmn5J3ZEeefTMjDv22V2g" name="Dependency_customer number" dependencyType="TRANSFORM TRACEABILITY">
+        <targetEnd href="eMovies.ldm#_uqMHhp3ZEeefTMjDv22V2g"/>
+      </dependencies>
+      <containedType xsi:type="SQLDataTypes:IntegerDataType" xmi:id="_utmn5Z3ZEeefTMjDv22V2g" name="INTEGER" primitiveType="INTEGER"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_utmn5p3ZEeefTMjDv22V2g" name="customer_first_name" description="First name of a customer." label="customer first name" defaultValue="">
+      <eAnnotations xmi:id="_utmn553ZEeefTMjDv22V2g" source="ColumnDomain">
+        <details xmi:id="_utmn6J3ZEeefTMjDv22V2g" key="DomainName" value="file:/D:/TEST/DemoWorkspace/MITI_GIT_Demo/eMovies.ldm?/EMOVIES  7.1/&lt;&lt;Domains>>/first name"/>
+      </eAnnotations>
+      <dependencies xmi:id="_utmn6Z3ZEeefTMjDv22V2g" name="Dependency_customer first name" dependencyType="TRANSFORM TRACEABILITY">
+        <targetEnd href="eMovies.ldm#_uqMHh53ZEeefTMjDv22V2g"/>
+      </dependencies>
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_utmn6p3ZEeefTMjDv22V2g" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="20"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_utmn653ZEeefTMjDv22V2g" name="customer_last_name" description="Last name of a customer." label="customer last name" defaultValue="">
+      <eAnnotations xmi:id="_utmn7J3ZEeefTMjDv22V2g" source="ColumnDomain">
+        <details xmi:id="_utmn7Z3ZEeefTMjDv22V2g" key="DomainName" value="file:/D:/TEST/DemoWorkspace/MITI_GIT_Demo/eMovies.ldm?/EMOVIES  7.1/&lt;&lt;Domains>>/last name"/>
+      </eAnnotations>
+      <dependencies xmi:id="_utmn7p3ZEeefTMjDv22V2g" name="Dependency_customer last name" dependencyType="TRANSFORM TRACEABILITY">
+        <targetEnd href="eMovies.ldm#_uqMHiJ3ZEeefTMjDv22V2g"/>
+      </dependencies>
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_utmn753ZEeefTMjDv22V2g" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="20"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_utmn8J3ZEeefTMjDv22V2g" name="customer_address" description="Street address of the customer." label="customer address" defaultValue="">
+      <eAnnotations xmi:id="_utmn8Z3ZEeefTMjDv22V2g" source="ColumnDomain">
+        <details xmi:id="_utmn8p3ZEeefTMjDv22V2g" key="DomainName" value="file:/D:/TEST/DemoWorkspace/MITI_GIT_Demo/eMovies.ldm?/EMOVIES  7.1/&lt;&lt;Domains>>/address"/>
+      </eAnnotations>
+      <dependencies xmi:id="_utmn853ZEeefTMjDv22V2g" name="Dependency_customer address" dependencyType="TRANSFORM TRACEABILITY">
+        <targetEnd href="eMovies.ldm#_uqMHiZ3ZEeefTMjDv22V2g"/>
+      </dependencies>
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_utmn9J3ZEeefTMjDv22V2g" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="20"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_utmn9Z3ZEeefTMjDv22V2g" name="customer_city" description="City associated with customer's address." label="customer city" defaultValue="">
+      <eAnnotations xmi:id="_utmn9p3ZEeefTMjDv22V2g" source="ColumnDomain">
+        <details xmi:id="_utmn953ZEeefTMjDv22V2g" key="DomainName" value="file:/D:/TEST/DemoWorkspace/MITI_GIT_Demo/eMovies.ldm?/EMOVIES  7.1/&lt;&lt;Domains>>/city"/>
+      </eAnnotations>
+      <dependencies xmi:id="_utmn-J3ZEeefTMjDv22V2g" name="Dependency_customer city" dependencyType="TRANSFORM TRACEABILITY">
+        <targetEnd href="eMovies.ldm#_uqMHip3ZEeefTMjDv22V2g"/>
+      </dependencies>
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_utmn-Z3ZEeefTMjDv22V2g" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="20"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_utmn-p3ZEeefTMjDv22V2g" name="customer_state" description="The two-character state abbreviation associated with customer's address." label="customer state" defaultValue="">
+      <eAnnotations xmi:id="_utmn-53ZEeefTMjDv22V2g" source="ColumnDomain">
+        <details xmi:id="_utmn_J3ZEeefTMjDv22V2g" key="DomainName" value="file:/D:/TEST/DemoWorkspace/MITI_GIT_Demo/eMovies.ldm?/EMOVIES  7.1/&lt;&lt;Domains>>/state"/>
+      </eAnnotations>
+      <dependencies xmi:id="_utmn_Z3ZEeefTMjDv22V2g" name="Dependency_customer state" dependencyType="TRANSFORM TRACEABILITY">
+        <targetEnd href="eMovies.ldm#_uqMHi53ZEeefTMjDv22V2g"/>
+      </dependencies>
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_utmn_p3ZEeefTMjDv22V2g" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="20"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_utmn_53ZEeefTMjDv22V2g" name="customer_zip_code" description="The zip-code associated with customer's address." label="customer zip code" defaultValue="">
+      <eAnnotations xmi:id="_utmoAJ3ZEeefTMjDv22V2g" source="ColumnDomain">
+        <details xmi:id="_utmoAZ3ZEeefTMjDv22V2g" key="DomainName" value="file:/D:/TEST/DemoWorkspace/MITI_GIT_Demo/eMovies.ldm?/EMOVIES  7.1/&lt;&lt;Domains>>/zip code"/>
+      </eAnnotations>
+      <dependencies xmi:id="_utmoAp3ZEeefTMjDv22V2g" name="Dependency_customer zip code" dependencyType="TRANSFORM TRACEABILITY">
+        <targetEnd href="eMovies.ldm#_uqMHjJ3ZEeefTMjDv22V2g"/>
+      </dependencies>
+      <containedType xsi:type="SQLDataTypes:IntegerDataType" xmi:id="_utmoA53ZEeefTMjDv22V2g" name="INTEGER" primitiveType="INTEGER"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_utmoBJ3ZEeefTMjDv22V2g" name="email" description="The email address associated with a customer." label="email" defaultValue="">
+      <dependencies xmi:id="_utmoBZ3ZEeefTMjDv22V2g" name="Dependency_email" dependencyType="TRANSFORM TRACEABILITY">
+        <targetEnd href="eMovies.ldm#_uqMHjZ3ZEeefTMjDv22V2g"/>
+      </dependencies>
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_utmoBp3ZEeefTMjDv22V2g" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="50"/>
+    </columns>
+    <constraints xsi:type="SQLConstraints:PrimaryKey" xmi:id="_utmoB53ZEeefTMjDv22V2g" name="XPKCUSTOMER" description="" label="XPKCUSTOMER" members="_utmn453ZEeefTMjDv22V2g" ForeignKey="_ut14f53ZEeefTMjDv22V2g _ut2fiJ3ZEeefTMjDv22V2g"/>
+    <constraints xsi:type="SQLConstraints:UniqueConstraint" xmi:id="_utmoCJ3ZEeefTMjDv22V2g" name="XAK1CUSTOMER" description="" label="XAK1CUSTOMER" members="_utmn8J3ZEeefTMjDv22V2g"/>
+  </LUW:LUWTable>
+  <LUW:LUWTable xmi:id="_utnO8J3ZEeefTMjDv22V2g" name="MOVIE_STORE" description="MOVIE_STORE" label="MOVIE STORE" schema="_utHfsJ3ZEeefTMjDv22V2g" index="_uuNr6J3ZEeefTMjDv22V2g _uuO6B53ZEeefTMjDv22V2g _uuO6DJ3ZEeefTMjDv22V2g">
+    <extensions xsi:type="Volumetrics:RecordVolumetrics" xmi:id="_utnO8Z3ZEeefTMjDv22V2g"/>
+    <extensions xsi:type="dimensional:Fact" xmi:id="_utnO8p3ZEeefTMjDv22V2g" userDefined="true"/>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_utnO853ZEeefTMjDv22V2g" name="movie_number" description="A unique number that identifies a movie." label="movie number" nullable="false" defaultValue="">
+      <dependencies xmi:id="_utnO9J3ZEeefTMjDv22V2g" name="Dependency_movie number" dependencyType="TRANSFORM TRACEABILITY">
+        <targetEnd href="eMovies.ldm#_uqMuk53ZEeefTMjDv22V2g"/>
+      </dependencies>
+      <containedType xsi:type="SQLDataTypes:IntegerDataType" xmi:id="_utnO9Z3ZEeefTMjDv22V2g" name="INTEGER" primitiveType="INTEGER"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_utnO9p3ZEeefTMjDv22V2g" name="store_number" description="A unique identifier of the video store." label="store number" nullable="false" defaultValue="">
+      <dependencies xmi:id="_utnO953ZEeefTMjDv22V2g" name="Dependency_store number" dependencyType="TRANSFORM TRACEABILITY">
+        <targetEnd href="eMovies.ldm#_uqMulJ3ZEeefTMjDv22V2g"/>
+      </dependencies>
+      <containedType xsi:type="SQLDataTypes:IntegerDataType" xmi:id="_utnO-J3ZEeefTMjDv22V2g" name="INTEGER" primitiveType="INTEGER"/>
+    </columns>
+    <constraints xsi:type="SQLConstraints:PrimaryKey" xmi:id="_utnO-Z3ZEeefTMjDv22V2g" name="XPKMOVIE_STORE" description="" label="XPKMOVIE STORE" members="_utnO853ZEeefTMjDv22V2g _utnO9p3ZEeefTMjDv22V2g"/>
+    <constraints xsi:type="SQLConstraints:ForeignKey" xmi:id="_ut0DQZ3ZEeefTMjDv22V2g" name="rents" description="" label="XIF1MOVIE STORE" members="_utnO853ZEeefTMjDv22V2g" uniqueConstraint="_utpETJ3ZEeefTMjDv22V2g" referencedTable="_utpEIJ3ZEeefTMjDv22V2g">
+      <eAnnotations xmi:id="_ut0DQp3ZEeefTMjDv22V2g" source="FK_MODELING_RELATIONSHIP">
+        <details xmi:id="_ut0DQ53ZEeefTMjDv22V2g" key="FK_IS_IDENTIFYING_RELATIONSHIP" value="true"/>
+        <details xmi:id="_ut0DRJ3ZEeefTMjDv22V2g" key="FK_PARENT_ROLE_NAME" value="rents"/>
+        <details xmi:id="_ut0DRZ3ZEeefTMjDv22V2g" key="FK_PARENT_MULTIPLICITY" value="1"/>
+        <details xmi:id="_ut0DRp3ZEeefTMjDv22V2g" key="FK_CHILD_ROLE_NAME" value=""/>
+        <details xmi:id="_ut0DR53ZEeefTMjDv22V2g" key="FK_CHILD_MULTIPLICITY" value="*"/>
+      </eAnnotations>
+    </constraints>
+    <constraints xsi:type="SQLConstraints:ForeignKey" xmi:id="_ut0DVp3ZEeefTMjDv22V2g" name="is_in" description="" label="XIF2MOVIE STORE" members="_utnO9p3ZEeefTMjDv22V2g" uniqueConstraint="_uttVuZ3ZEeefTMjDv22V2g" referencedTable="_uttVkJ3ZEeefTMjDv22V2g">
+      <eAnnotations xmi:id="_ut0qUJ3ZEeefTMjDv22V2g" source="FK_MODELING_RELATIONSHIP">
+        <details xmi:id="_ut0qUZ3ZEeefTMjDv22V2g" key="FK_IS_IDENTIFYING_RELATIONSHIP" value="true"/>
+        <details xmi:id="_ut0qUp3ZEeefTMjDv22V2g" key="FK_PARENT_ROLE_NAME" value="is in"/>
+        <details xmi:id="_ut0qU53ZEeefTMjDv22V2g" key="FK_PARENT_MULTIPLICITY" value="1"/>
+        <details xmi:id="_ut0qVJ3ZEeefTMjDv22V2g" key="FK_CHILD_ROLE_NAME" value=""/>
+        <details xmi:id="_ut0qVZ3ZEeefTMjDv22V2g" key="FK_CHILD_MULTIPLICITY" value="*"/>
+      </eAnnotations>
+    </constraints>
+  </LUW:LUWTable>
+  <LUW:LUWTable xmi:id="_utpEIJ3ZEeefTMjDv22V2g" name="MOVIE" description="A MOVIE is any video that can be rented." label="MOVIE" schema="_utHfsJ3ZEeefTMjDv22V2g" index="_uuOS8Z3ZEeefTMjDv22V2g _uuO6Cp3ZEeefTMjDv22V2g" referencingForeignKeys="_ut0DQZ3ZEeefTMjDv22V2g _ut0qZJ3ZEeefTMjDv22V2g">
+    <extensions xsi:type="Volumetrics:RecordVolumetrics" xmi:id="_utpEIZ3ZEeefTMjDv22V2g"/>
+    <extensions xsi:type="dimensional:Dimension" xmi:id="_utpEIp3ZEeefTMjDv22V2g" userDefined="true"/>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_utpEI53ZEeefTMjDv22V2g" name="movie_title" description="" label="movie title" defaultValue="">
+      <eAnnotations xmi:id="_utpEJJ3ZEeefTMjDv22V2g" source="ColumnDomain">
+        <details xmi:id="_utpEJZ3ZEeefTMjDv22V2g" key="DomainName" value="file:/D:/TEST/DemoWorkspace/MITI_GIT_Demo/eMovies.ldm?/EMOVIES  7.1/&lt;&lt;Domains>>/title"/>
+      </eAnnotations>
+      <dependencies xmi:id="_utpEJp3ZEeefTMjDv22V2g" name="Dependency_movie title" dependencyType="TRANSFORM TRACEABILITY">
+        <targetEnd href="eMovies.ldm#_uqN8tJ3ZEeefTMjDv22V2g"/>
+      </dependencies>
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_utpEJ53ZEeefTMjDv22V2g" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="20"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_utpEKJ3ZEeefTMjDv22V2g" name="movie_director" description="Last name of the movie's director." label="movie director" defaultValue="">
+      <eAnnotations xmi:id="_utpEKZ3ZEeefTMjDv22V2g" source="ColumnDomain">
+        <details xmi:id="_utpEKp3ZEeefTMjDv22V2g" key="DomainName" value="file:/D:/TEST/DemoWorkspace/MITI_GIT_Demo/eMovies.ldm?/EMOVIES  7.1/&lt;&lt;Domains>>/director"/>
+      </eAnnotations>
+      <dependencies xmi:id="_utpEK53ZEeefTMjDv22V2g" name="Dependency_movie director" dependencyType="TRANSFORM TRACEABILITY">
+        <targetEnd href="eMovies.ldm#_uqN8tZ3ZEeefTMjDv22V2g"/>
+      </dependencies>
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_utpELJ3ZEeefTMjDv22V2g" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="20"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_utpELZ3ZEeefTMjDv22V2g" name="movie_number" description="A unique number that identifies a movie." label="movie number" nullable="false" defaultValue="">
+      <dependencies xmi:id="_utpELp3ZEeefTMjDv22V2g" name="Dependency_movie number" dependencyType="TRANSFORM TRACEABILITY">
+        <targetEnd href="eMovies.ldm#_uqN8s53ZEeefTMjDv22V2g"/>
+      </dependencies>
+      <containedType xsi:type="SQLDataTypes:IntegerDataType" xmi:id="_utpEL53ZEeefTMjDv22V2g" name="INTEGER" primitiveType="INTEGER"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_utpEMJ3ZEeefTMjDv22V2g" name="description" description="A brief description of the movie's plot or story line." label="description" defaultValue="">
+      <dependencies xmi:id="_utpEMZ3ZEeefTMjDv22V2g" name="Dependency_description" dependencyType="TRANSFORM TRACEABILITY">
+        <targetEnd href="eMovies.ldm#_uqN8tp3ZEeefTMjDv22V2g"/>
+      </dependencies>
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_utpEMp3ZEeefTMjDv22V2g" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="20"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_utpEM53ZEeefTMjDv22V2g" name="star_1_name" description="Last name of the leading star of the movie." label="star 1 name" defaultValue="">
+      <eAnnotations xmi:id="_utpENJ3ZEeefTMjDv22V2g" source="ColumnDomain">
+        <details xmi:id="_utpENZ3ZEeefTMjDv22V2g" key="DomainName" value="file:/D:/TEST/DemoWorkspace/MITI_GIT_Demo/eMovies.ldm?/EMOVIES  7.1/&lt;&lt;Domains>>/first name"/>
+      </eAnnotations>
+      <dependencies xmi:id="_utpENp3ZEeefTMjDv22V2g" name="Dependency_star 1 name" dependencyType="TRANSFORM TRACEABILITY">
+        <targetEnd href="eMovies.ldm#_uqN8t53ZEeefTMjDv22V2g"/>
+      </dependencies>
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_utpEN53ZEeefTMjDv22V2g" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="20"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_utpEOJ3ZEeefTMjDv22V2g" name="rating" description="Rating associated with the movie." label="rating" defaultValue="">
+      <dependencies xmi:id="_utpEOZ3ZEeefTMjDv22V2g" name="Dependency_rating" dependencyType="TRANSFORM TRACEABILITY">
+        <targetEnd href="eMovies.ldm#_uqN8uJ3ZEeefTMjDv22V2g"/>
+      </dependencies>
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_utpEOp3ZEeefTMjDv22V2g" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="5"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_utpEO53ZEeefTMjDv22V2g" name="star_2_name" description="Last name of the second leading star of the movie." label="star 2 name" defaultValue="">
+      <eAnnotations xmi:id="_utpEPJ3ZEeefTMjDv22V2g" source="ColumnDomain">
+        <details xmi:id="_utpEPZ3ZEeefTMjDv22V2g" key="DomainName" value="file:/D:/TEST/DemoWorkspace/MITI_GIT_Demo/eMovies.ldm?/EMOVIES  7.1/&lt;&lt;Domains>>/first name"/>
+      </eAnnotations>
+      <dependencies xmi:id="_utpEPp3ZEeefTMjDv22V2g" name="Dependency_star 2 name" dependencyType="TRANSFORM TRACEABILITY">
+        <targetEnd href="eMovies.ldm#_uqN8uZ3ZEeefTMjDv22V2g"/>
+      </dependencies>
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_utpEP53ZEeefTMjDv22V2g" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="20"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_utpEQJ3ZEeefTMjDv22V2g" name="genre" description="The genre associated with the movie." label="genre" defaultValue="">
+      <dependencies xmi:id="_utpEQZ3ZEeefTMjDv22V2g" name="Dependency_genre" dependencyType="TRANSFORM TRACEABILITY">
+        <targetEnd href="eMovies.ldm#_uqN8up3ZEeefTMjDv22V2g"/>
+      </dependencies>
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_utpEQp3ZEeefTMjDv22V2g" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="2"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_utpEQ53ZEeefTMjDv22V2g" name="rental_rate" description="Amount charged for renting the movie." label="rental rate" defaultValue="">
+      <dependencies xmi:id="_utpERJ3ZEeefTMjDv22V2g" name="Dependency_rental rate" dependencyType="TRANSFORM TRACEABILITY">
+        <targetEnd href="eMovies.ldm#_uqN8u53ZEeefTMjDv22V2g"/>
+      </dependencies>
+      <containedType xsi:type="SQLDataTypes:ApproximateNumericDataType" xmi:id="_utpERZ3ZEeefTMjDv22V2g" name="FLOAT" primitiveType="FLOAT"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_utpERp3ZEeefTMjDv22V2g" name="movie_url" description="The location on the internet where the movie clip is stored." label="movie url" defaultValue="">
+      <dependencies xmi:id="_utpER53ZEeefTMjDv22V2g" name="Dependency_movie url" dependencyType="TRANSFORM TRACEABILITY">
+        <targetEnd href="eMovies.ldm#_uqN8vJ3ZEeefTMjDv22V2g"/>
+      </dependencies>
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_utpESJ3ZEeefTMjDv22V2g" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="50"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_utpESZ3ZEeefTMjDv22V2g" name="movie_clip" description="Stored movie clip." label="movie clip" defaultValue="">
+      <dependencies xmi:id="_utpESp3ZEeefTMjDv22V2g" name="Dependency_movie clip" dependencyType="TRANSFORM TRACEABILITY">
+        <targetEnd href="eMovies.ldm#_uqN8vZ3ZEeefTMjDv22V2g"/>
+      </dependencies>
+      <containedType xsi:type="SQLDataTypes:BinaryStringDataType" xmi:id="_utpES53ZEeefTMjDv22V2g" name="VARCHAR FOR BIT DATA" primitiveType="BINARY_VARYING"/>
+    </columns>
+    <constraints xsi:type="SQLConstraints:PrimaryKey" xmi:id="_utpETJ3ZEeefTMjDv22V2g" name="XPKMOVIE" description="" label="XPKMOVIE" members="_utpELZ3ZEeefTMjDv22V2g" ForeignKey="_ut0DQZ3ZEeefTMjDv22V2g _ut0qZJ3ZEeefTMjDv22V2g"/>
+    <constraints xsi:type="SQLConstraints:UniqueConstraint" xmi:id="_utpETZ3ZEeefTMjDv22V2g" name="XAK1MOVIE" description="" label="XAK1MOVIE" members="_utpEI53ZEeefTMjDv22V2g"/>
+  </LUW:LUWTable>
+  <LUW:LUWTable xmi:id="_utprMJ3ZEeefTMjDv22V2g" name="CHECK" description="A CHECK is a form of PAYMENT." label="CHECK" schema="_utHfsJ3ZEeefTMjDv22V2g" index="_uuNE1p3ZEeefTMjDv22V2g _uuNr5p3ZEeefTMjDv22V2g">
+    <extensions xsi:type="Volumetrics:RecordVolumetrics" xmi:id="_utprMZ3ZEeefTMjDv22V2g"/>
+    <extensions xsi:type="dimensional:Fact" xmi:id="_utprMp3ZEeefTMjDv22V2g" userDefined="true"/>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_utprM53ZEeefTMjDv22V2g" name="payment_transaction_number" description="A unique number associated with the payment." label="payment transaction number" nullable="false" defaultValue="">
+      <dependencies xmi:id="_utprNJ3ZEeefTMjDv22V2g" name="Dependency_payment transaction number" dependencyType="TRANSFORM TRACEABILITY">
+        <targetEnd href="eMovies.ldm#_uqPx853ZEeefTMjDv22V2g"/>
+      </dependencies>
+      <containedType xsi:type="SQLDataTypes:IntegerDataType" xmi:id="_utprNZ3ZEeefTMjDv22V2g" name="INTEGER" primitiveType="INTEGER"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_utprNp3ZEeefTMjDv22V2g" name="check_bank_number" description="The bank number associated with the check issued for payment." label="check bank number" defaultValue="">
+      <dependencies xmi:id="_utprN53ZEeefTMjDv22V2g" name="Dependency_check bank number" dependencyType="TRANSFORM TRACEABILITY">
+        <targetEnd href="eMovies.ldm#_uqPx9J3ZEeefTMjDv22V2g"/>
+      </dependencies>
+      <containedType xsi:type="SQLDataTypes:IntegerDataType" xmi:id="_utprOJ3ZEeefTMjDv22V2g" name="INTEGER" primitiveType="INTEGER"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_utprOZ3ZEeefTMjDv22V2g" name="check_number" description="" label="check number" defaultValue="">
+      <dependencies xmi:id="_utprOp3ZEeefTMjDv22V2g" name="Dependency_check number" dependencyType="TRANSFORM TRACEABILITY">
+        <targetEnd href="eMovies.ldm#_uqPx9Z3ZEeefTMjDv22V2g"/>
+      </dependencies>
+      <containedType xsi:type="SQLDataTypes:IntegerDataType" xmi:id="_utprO53ZEeefTMjDv22V2g" name="INTEGER" primitiveType="INTEGER"/>
+    </columns>
+    <constraints xsi:type="SQLConstraints:PrimaryKey" xmi:id="_utprPJ3ZEeefTMjDv22V2g" name="XPKCHECK" description="" label="XPKCHECK" members="_utprM53ZEeefTMjDv22V2g"/>
+    <constraints xsi:type="SQLConstraints:ForeignKey" xmi:id="_ut2fj53ZEeefTMjDv22V2g" name="is_a" description="" label="Foreign Key2" members="_utprM53ZEeefTMjDv22V2g" onUpdate="CASCADE" onDelete="CASCADE" uniqueConstraint="_utq5aJ3ZEeefTMjDv22V2g" referencedTable="_utq5UJ3ZEeefTMjDv22V2g">
+      <eAnnotations xmi:id="_ut2fkJ3ZEeefTMjDv22V2g" source="FK_MODELING_RELATIONSHIP">
+        <details xmi:id="_ut2fkZ3ZEeefTMjDv22V2g" key="FK_IS_GENERALIZATION" value="true"/>
+        <details xmi:id="_ut2fkp3ZEeefTMjDv22V2g" key="FK_IS_IDENTIFYING_RELATIONSHIP" value="true"/>
+        <details xmi:id="_ut2fk53ZEeefTMjDv22V2g" key="FK_PARENT_ROLE_NAME" value=""/>
+        <details xmi:id="_ut2flJ3ZEeefTMjDv22V2g" key="FK_PARENT_MULTIPLICITY" value="1"/>
+        <details xmi:id="_ut2flZ3ZEeefTMjDv22V2g" key="FK_CHILD_ROLE_NAME" value="is a"/>
+        <details xmi:id="_ut2flp3ZEeefTMjDv22V2g" key="FK_CHILD_MULTIPLICITY" value="0..1"/>
+      </eAnnotations>
+    </constraints>
+  </LUW:LUWTable>
+  <LUW:LUWTable xmi:id="_utqSQJ3ZEeefTMjDv22V2g" name="MOVIE_COPY" description="A MOVIE COPY is a single copy of a MOVIE. Physical Comment." label="MOVIE COPY" schema="_utHfsJ3ZEeefTMjDv22V2g" index="_uuNr7p3ZEeefTMjDv22V2g _uuO6AJ3ZEeefTMjDv22V2g" referencingForeignKeys="_ut0DT53ZEeefTMjDv22V2g">
+    <extensions xsi:type="Volumetrics:RecordVolumetrics" xmi:id="_utqSQZ3ZEeefTMjDv22V2g"/>
+    <extensions xsi:type="dimensional:Dimension" xmi:id="_utqSQp3ZEeefTMjDv22V2g" userDefined="true"/>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_utqSQ53ZEeefTMjDv22V2g" name="movie_copy_number" description="A unique number identifying the movie copy.  Physical Comment" label="movie copy number" nullable="false" defaultValue="">
+      <dependencies xmi:id="_utqSRJ3ZEeefTMjDv22V2g" name="Dependency_movie copy number" dependencyType="TRANSFORM TRACEABILITY">
+        <targetEnd href="eMovies.ldm#_uqRnFZ3ZEeefTMjDv22V2g"/>
+      </dependencies>
+      <containedType xsi:type="SQLDataTypes:IntegerDataType" xmi:id="_utqSRZ3ZEeefTMjDv22V2g" name="INTEGER" primitiveType="INTEGER"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_utqSRp3ZEeefTMjDv22V2g" name="general_condition" description="A code identifying the general condition of the copy of the movie." label="general condition" defaultValue="">
+      <dependencies xmi:id="_utqSR53ZEeefTMjDv22V2g" name="Dependency_general condition" dependencyType="TRANSFORM TRACEABILITY">
+        <targetEnd href="eMovies.ldm#_uqRnF53ZEeefTMjDv22V2g"/>
+      </dependencies>
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_utqSSJ3ZEeefTMjDv22V2g" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="20"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_utqSSZ3ZEeefTMjDv22V2g" name="movie_format" description="Defines the format of the movie copy (i.e. VHS, DVD)." label="movie format" defaultValue="">
+      <dependencies xmi:id="_utqSSp3ZEeefTMjDv22V2g" name="Dependency_movie format" dependencyType="TRANSFORM TRACEABILITY">
+        <targetEnd href="eMovies.ldm#_uqRnGJ3ZEeefTMjDv22V2g"/>
+      </dependencies>
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_utqSS53ZEeefTMjDv22V2g" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="20"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_utqSTJ3ZEeefTMjDv22V2g" name="movie_number" description="A unique number that identifies a movie." label="movie number" nullable="false" defaultValue="">
+      <dependencies xmi:id="_utqSTZ3ZEeefTMjDv22V2g" name="Dependency_movie number" dependencyType="TRANSFORM TRACEABILITY">
+        <targetEnd href="eMovies.ldm#_uqRnFp3ZEeefTMjDv22V2g"/>
+      </dependencies>
+      <containedType xsi:type="SQLDataTypes:IntegerDataType" xmi:id="_utqSTp3ZEeefTMjDv22V2g" name="INTEGER" primitiveType="INTEGER"/>
+    </columns>
+    <constraints xsi:type="SQLConstraints:PrimaryKey" xmi:id="_utqST53ZEeefTMjDv22V2g" name="XPKMOVIE_COPY" description="" label="XPKMOVIE COPY" members="_utqSQ53ZEeefTMjDv22V2g _utqSTJ3ZEeefTMjDv22V2g" ForeignKey="_ut0DT53ZEeefTMjDv22V2g"/>
+    <constraints xsi:type="SQLConstraints:ForeignKey" xmi:id="_ut0qZJ3ZEeefTMjDv22V2g" name="is_rented_as" description="" label="XIF1MOVIE COPY" members="_utqSTJ3ZEeefTMjDv22V2g" uniqueConstraint="_utpETJ3ZEeefTMjDv22V2g" referencedTable="_utpEIJ3ZEeefTMjDv22V2g">
+      <eAnnotations xmi:id="_ut0qZZ3ZEeefTMjDv22V2g" source="FK_MODELING_RELATIONSHIP">
+        <details xmi:id="_ut1RYJ3ZEeefTMjDv22V2g" key="FK_IS_IDENTIFYING_RELATIONSHIP" value="true"/>
+        <details xmi:id="_ut1RYZ3ZEeefTMjDv22V2g" key="FK_PARENT_ROLE_NAME" value="is rented as"/>
+        <details xmi:id="_ut1RYp3ZEeefTMjDv22V2g" key="FK_PARENT_MULTIPLICITY" value="1"/>
+        <details xmi:id="_ut1RY53ZEeefTMjDv22V2g" key="FK_CHILD_ROLE_NAME" value="is a copy of a"/>
+        <details xmi:id="_ut1RZJ3ZEeefTMjDv22V2g" key="FK_CHILD_MULTIPLICITY" value="*"/>
+      </eAnnotations>
+    </constraints>
+  </LUW:LUWTable>
+  <LUW:LUWTable xmi:id="_utq5UJ3ZEeefTMjDv22V2g" name="PAYMENT" description="A PAYMENT is received when a CUSTOMER rents a MOVIE." label="PAYMENT" schema="_utHfsJ3ZEeefTMjDv22V2g" index="_uuNr4p3ZEeefTMjDv22V2g _uuNr5J3ZEeefTMjDv22V2g _uuPhHp3ZEeefTMjDv22V2g _uuPhIJ3ZEeefTMjDv22V2g" referencingForeignKeys="_ut0qVp3ZEeefTMjDv22V2g _ut1RZZ3ZEeefTMjDv22V2g _ut14cJ3ZEeefTMjDv22V2g _ut2fj53ZEeefTMjDv22V2g _ut3GkJ3ZEeefTMjDv22V2g">
+    <extensions xsi:type="Volumetrics:RecordVolumetrics" xmi:id="_utq5UZ3ZEeefTMjDv22V2g"/>
+    <extensions xsi:type="dimensional:Outrigger" xmi:id="_utq5Up3ZEeefTMjDv22V2g" userDefined="true"/>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_utq5U53ZEeefTMjDv22V2g" name="customer_number" description="A unique number associated with a customer." label="customer number" defaultValue="">
+      <dependencies xmi:id="_utq5VJ3ZEeefTMjDv22V2g" name="Dependency_customer number" dependencyType="TRANSFORM TRACEABILITY">
+        <targetEnd href="eMovies.ldm#_uqK5a53ZEeefTMjDv22V2g"/>
+      </dependencies>
+      <containedType xsi:type="SQLDataTypes:IntegerDataType" xmi:id="_utq5VZ3ZEeefTMjDv22V2g" name="INTEGER" primitiveType="INTEGER"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_utq5Vp3ZEeefTMjDv22V2g" name="payment_transaction_number" description="The unique number associated with the payment." label="payment transaction number" nullable="false" defaultValue="">
+      <dependencies xmi:id="_utq5V53ZEeefTMjDv22V2g" name="Dependency_payment transaction number" dependencyType="TRANSFORM TRACEABILITY">
+        <targetEnd href="eMovies.ldm#_uqK5ZZ3ZEeefTMjDv22V2g"/>
+      </dependencies>
+      <containedType xsi:type="SQLDataTypes:IntegerDataType" xmi:id="_utq5WJ3ZEeefTMjDv22V2g" name="INTEGER" primitiveType="INTEGER"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_utq5WZ3ZEeefTMjDv22V2g" name="payment_type" description="The method payment; check, credit card, e-payment." label="payment type" defaultValue="">
+      <dependencies xmi:id="_utq5Wp3ZEeefTMjDv22V2g" name="Dependency_payment type" dependencyType="TRANSFORM TRACEABILITY">
+        <targetEnd href="eMovies.ldm#_uqK5Zp3ZEeefTMjDv22V2g"/>
+      </dependencies>
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_utq5W53ZEeefTMjDv22V2g" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="18"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_utq5XJ3ZEeefTMjDv22V2g" name="payment_amount" description="The amount paid to rent the movie." label="payment amount" defaultValue="">
+      <dependencies xmi:id="_utq5XZ3ZEeefTMjDv22V2g" name="Dependency_payment amount" dependencyType="TRANSFORM TRACEABILITY">
+        <targetEnd href="eMovies.ldm#_uqK5Z53ZEeefTMjDv22V2g"/>
+      </dependencies>
+      <containedType xsi:type="SQLDataTypes:ApproximateNumericDataType" xmi:id="_utq5Xp3ZEeefTMjDv22V2g" name="FLOAT" primitiveType="FLOAT"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_utq5X53ZEeefTMjDv22V2g" name="payment_date" description="The date on which the movie was rented." label="payment date" defaultValue="">
+      <dependencies xmi:id="_utq5YJ3ZEeefTMjDv22V2g" name="Dependency_payment date" dependencyType="TRANSFORM TRACEABILITY">
+        <targetEnd href="eMovies.ldm#_uqK5aJ3ZEeefTMjDv22V2g"/>
+      </dependencies>
+      <containedType xsi:type="SQLDataTypes:IntegerDataType" xmi:id="_utq5YZ3ZEeefTMjDv22V2g" name="SMALLINT" primitiveType="SMALLINT" precision="8"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_utq5Yp3ZEeefTMjDv22V2g" name="payment_status" description="The status of the payment." label="payment status" defaultValue="">
+      <dependencies xmi:id="_utq5Y53ZEeefTMjDv22V2g" name="Dependency_payment status" dependencyType="TRANSFORM TRACEABILITY">
+        <targetEnd href="eMovies.ldm#_uqK5aZ3ZEeefTMjDv22V2g"/>
+      </dependencies>
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_utq5ZJ3ZEeefTMjDv22V2g" name="VARCHAR" primitiveType="CHARACTER_VARYING"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_utq5ZZ3ZEeefTMjDv22V2g" name="employee_number" description="A unique number that identifies the employee." label="employee number" nullable="false" defaultValue="">
+      <dependencies xmi:id="_utq5Zp3ZEeefTMjDv22V2g" name="Dependency_employee number" dependencyType="TRANSFORM TRACEABILITY">
+        <targetEnd href="eMovies.ldm#_uqK5ap3ZEeefTMjDv22V2g"/>
+      </dependencies>
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_utq5Z53ZEeefTMjDv22V2g" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="20"/>
+    </columns>
+    <constraints xsi:type="SQLConstraints:PrimaryKey" xmi:id="_utq5aJ3ZEeefTMjDv22V2g" name="XPKPAYMENT" description="" label="XPKPAYMENT" members="_utq5Vp3ZEeefTMjDv22V2g" ForeignKey="_ut0qVp3ZEeefTMjDv22V2g _ut1RZZ3ZEeefTMjDv22V2g _ut14cJ3ZEeefTMjDv22V2g _ut2fj53ZEeefTMjDv22V2g _ut3GkJ3ZEeefTMjDv22V2g"/>
+    <constraints xsi:type="SQLConstraints:ForeignKey" xmi:id="_utzcMJ3ZEeefTMjDv22V2g" name="makes_2" description="" label="XIF3PAYMENT" members="_utq5U53ZEeefTMjDv22V2g" uniqueConstraint="_utrgbZ3ZEeefTMjDv22V2g" referencedTable="_utq5aZ3ZEeefTMjDv22V2g">
+      <eAnnotations xmi:id="_utzcMZ3ZEeefTMjDv22V2g" source="FK_MODELING_RELATIONSHIP">
+        <details xmi:id="_utzcMp3ZEeefTMjDv22V2g" key="FK_IS_IDENTIFYING_RELATIONSHIP" value="false"/>
+        <details xmi:id="_utzcM53ZEeefTMjDv22V2g" key="FK_PARENT_ROLE_NAME" value="makes_2"/>
+        <details xmi:id="_utzcNJ3ZEeefTMjDv22V2g" key="FK_PARENT_MULTIPLICITY" value="0..1"/>
+        <details xmi:id="_utzcNZ3ZEeefTMjDv22V2g" key="FK_CHILD_ROLE_NAME" value="is made by_2"/>
+        <details xmi:id="_ut0DQJ3ZEeefTMjDv22V2g" key="FK_CHILD_MULTIPLICITY" value="*"/>
+      </eAnnotations>
+    </constraints>
+    <constraints xsi:type="SQLConstraints:ForeignKey" xmi:id="_ut2fgZ3ZEeefTMjDv22V2g" name="receives" description="" label="XIF2PAYMENT" members="_utq5ZZ3ZEeefTMjDv22V2g" uniqueConstraint="_utlZ653ZEeefTMjDv22V2g" referencedTable="_utkysJ3ZEeefTMjDv22V2g">
+      <eAnnotations xmi:id="_ut2fgp3ZEeefTMjDv22V2g" source="FK_MODELING_RELATIONSHIP">
+        <details xmi:id="_ut2fg53ZEeefTMjDv22V2g" key="FK_IS_IDENTIFYING_RELATIONSHIP" value="false"/>
+        <details xmi:id="_ut2fhJ3ZEeefTMjDv22V2g" key="FK_PARENT_ROLE_NAME" value="receives"/>
+        <details xmi:id="_ut2fhZ3ZEeefTMjDv22V2g" key="FK_PARENT_MULTIPLICITY" value="0..1"/>
+        <details xmi:id="_ut2fhp3ZEeefTMjDv22V2g" key="FK_CHILD_ROLE_NAME" value="is received by"/>
+        <details xmi:id="_ut2fh53ZEeefTMjDv22V2g" key="FK_CHILD_MULTIPLICITY" value="*"/>
+      </eAnnotations>
+    </constraints>
+    <constraints xsi:type="SQLConstraints:ForeignKey" xmi:id="_ut2fiJ3ZEeefTMjDv22V2g" name="makes_1" description="" label="XIF4PAYMENT" members="_utq5U53ZEeefTMjDv22V2g" uniqueConstraint="_utmoB53ZEeefTMjDv22V2g" referencedTable="_utmn4J3ZEeefTMjDv22V2g">
+      <eAnnotations xmi:id="_ut2fiZ3ZEeefTMjDv22V2g" source="FK_MODELING_RELATIONSHIP">
+        <details xmi:id="_ut2fip3ZEeefTMjDv22V2g" key="FK_IS_IDENTIFYING_RELATIONSHIP" value="false"/>
+        <details xmi:id="_ut2fi53ZEeefTMjDv22V2g" key="FK_PARENT_ROLE_NAME" value="makes_1"/>
+        <details xmi:id="_ut2fjJ3ZEeefTMjDv22V2g" key="FK_PARENT_MULTIPLICITY" value="0..1"/>
+        <details xmi:id="_ut2fjZ3ZEeefTMjDv22V2g" key="FK_CHILD_ROLE_NAME" value="is made by_1"/>
+        <details xmi:id="_ut2fjp3ZEeefTMjDv22V2g" key="FK_CHILD_MULTIPLICITY" value="*"/>
+      </eAnnotations>
+    </constraints>
+  </LUW:LUWTable>
+  <LUW:LUWTable xmi:id="_utq5aZ3ZEeefTMjDv22V2g" name="CUSTOMER_CREDIT" description="CUSTOMER CREDIT is the status of available credit for a CUSTOMER." label="CUSTOMER CREDIT" schema="_utHfsJ3ZEeefTMjDv22V2g" index="_uuOS953ZEeefTMjDv22V2g" referencingForeignKeys="_utzcMJ3ZEeefTMjDv22V2g _ut14eJ3ZEeefTMjDv22V2g">
+    <extensions xsi:type="Volumetrics:RecordVolumetrics" xmi:id="_utq5ap3ZEeefTMjDv22V2g"/>
+    <extensions xsi:type="dimensional:Dimension" xmi:id="_utrgYJ3ZEeefTMjDv22V2g" userDefined="true"/>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_utrgYZ3ZEeefTMjDv22V2g" name="customer_number" description="A unique number associated with a customer." label="customer number" nullable="false" defaultValue="">
+      <dependencies xmi:id="_utrgYp3ZEeefTMjDv22V2g" name="Dependency_customer number" dependencyType="TRANSFORM TRACEABILITY">
+        <targetEnd href="eMovies.ldm#_uqLgc53ZEeefTMjDv22V2g"/>
+      </dependencies>
+      <containedType xsi:type="SQLDataTypes:IntegerDataType" xmi:id="_utrgY53ZEeefTMjDv22V2g" name="INTEGER" primitiveType="INTEGER"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_utrgZJ3ZEeefTMjDv22V2g" name="credit_card" description="The credit card number associated with a customer." label="credit card" defaultValue="">
+      <dependencies xmi:id="_utrgZZ3ZEeefTMjDv22V2g" name="Dependency_credit card" dependencyType="TRANSFORM TRACEABILITY">
+        <targetEnd href="eMovies.ldm#_uqLgdJ3ZEeefTMjDv22V2g"/>
+      </dependencies>
+      <containedType xsi:type="SQLDataTypes:IntegerDataType" xmi:id="_utrgZp3ZEeefTMjDv22V2g" name="INTEGER" primitiveType="INTEGER"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_utrgZ53ZEeefTMjDv22V2g" name="credit_card_exp" description="Expiration date on the customer's credit card." label="credit card exp" defaultValue="">
+      <dependencies xmi:id="_utrgaJ3ZEeefTMjDv22V2g" name="Dependency_credit card exp" dependencyType="TRANSFORM TRACEABILITY">
+        <targetEnd href="eMovies.ldm#_uqMHgJ3ZEeefTMjDv22V2g"/>
+      </dependencies>
+      <containedType xsi:type="SQLDataTypes:IntegerDataType" xmi:id="_utrgaZ3ZEeefTMjDv22V2g" name="SMALLINT" primitiveType="SMALLINT" precision="8"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_utrgap3ZEeefTMjDv22V2g" name="status_code" description="Payment status associated with a customer." label="status code" defaultValue="">
+      <dependencies xmi:id="_utrga53ZEeefTMjDv22V2g" name="Dependency_status code" dependencyType="TRANSFORM TRACEABILITY">
+        <targetEnd href="eMovies.ldm#_uqMHgZ3ZEeefTMjDv22V2g"/>
+      </dependencies>
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_utrgbJ3ZEeefTMjDv22V2g" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="20"/>
+    </columns>
+    <constraints xsi:type="SQLConstraints:PrimaryKey" xmi:id="_utrgbZ3ZEeefTMjDv22V2g" name="XPKCUSTOMER_CREDIT" description="" label="XPKCUSTOMER CREDIT" members="_utrgYZ3ZEeefTMjDv22V2g" ForeignKey="_utzcMJ3ZEeefTMjDv22V2g _ut14eJ3ZEeefTMjDv22V2g"/>
+  </LUW:LUWTable>
+  <LUW:LUWTable xmi:id="_utrgbp3ZEeefTMjDv22V2g" name="CREDIT_CARD" description="A CREDIT CARD is a form of PAYMENT." label="CREDIT CARD" schema="_utHfsJ3ZEeefTMjDv22V2g" index="_uuNE2J3ZEeefTMjDv22V2g _uuO6BZ3ZEeefTMjDv22V2g">
+    <extensions xsi:type="Volumetrics:RecordVolumetrics" xmi:id="_utrgb53ZEeefTMjDv22V2g"/>
+    <extensions xsi:type="dimensional:Fact" xmi:id="_utrgcJ3ZEeefTMjDv22V2g" userDefined="true"/>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_utrgcZ3ZEeefTMjDv22V2g" name="payment_transaction_number" description="A unique number associated with the payment." label="payment transaction number" nullable="false" defaultValue="">
+      <dependencies xmi:id="_utrgcp3ZEeefTMjDv22V2g" name="Dependency_payment transaction number" dependencyType="TRANSFORM TRACEABILITY">
+        <targetEnd href="eMovies.ldm#_uqOjwp3ZEeefTMjDv22V2g"/>
+      </dependencies>
+      <containedType xsi:type="SQLDataTypes:IntegerDataType" xmi:id="_utrgc53ZEeefTMjDv22V2g" name="INTEGER" primitiveType="INTEGER"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_utrgdJ3ZEeefTMjDv22V2g" name="credit_card_number" description="The number of the customer credit card number." label="credit card number" defaultValue="">
+      <dependencies xmi:id="_utrgdZ3ZEeefTMjDv22V2g" name="Dependency_credit card number" dependencyType="TRANSFORM TRACEABILITY">
+        <targetEnd href="eMovies.ldm#_uqOjw53ZEeefTMjDv22V2g"/>
+      </dependencies>
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_utrgdp3ZEeefTMjDv22V2g" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="18"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_utrgd53ZEeefTMjDv22V2g" name="credit_card_exp" description="The expiration of customer's credit card." label="credit card exp" defaultValue="">
+      <dependencies xmi:id="_utrgeJ3ZEeefTMjDv22V2g" name="Dependency_credit card exp" dependencyType="TRANSFORM TRACEABILITY">
+        <targetEnd href="eMovies.ldm#_uqOjxJ3ZEeefTMjDv22V2g"/>
+      </dependencies>
+      <containedType xsi:type="SQLDataTypes:IntegerDataType" xmi:id="_utrgeZ3ZEeefTMjDv22V2g" name="SMALLINT" primitiveType="SMALLINT" precision="8"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_utrgep3ZEeefTMjDv22V2g" name="credit_card_type" description="" label="credit card type" defaultValue="">
+      <dependencies xmi:id="_utrge53ZEeefTMjDv22V2g" name="Dependency_credit card type" dependencyType="TRANSFORM TRACEABILITY">
+        <targetEnd href="eMovies.ldm#_uqOjxZ3ZEeefTMjDv22V2g"/>
+      </dependencies>
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_utrgfJ3ZEeefTMjDv22V2g" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="18"/>
+    </columns>
+    <constraints xsi:type="SQLConstraints:PrimaryKey" xmi:id="_utrgfZ3ZEeefTMjDv22V2g" name="XPKCREDIT_CARD" description="" label="XPKCREDIT CARD" members="_utrgcZ3ZEeefTMjDv22V2g"/>
+    <constraints xsi:type="SQLConstraints:ForeignKey" xmi:id="_ut14cJ3ZEeefTMjDv22V2g" name="is_a" description="" label="Foreign Key2" members="_utrgcZ3ZEeefTMjDv22V2g" onUpdate="CASCADE" onDelete="CASCADE" uniqueConstraint="_utq5aJ3ZEeefTMjDv22V2g" referencedTable="_utq5UJ3ZEeefTMjDv22V2g">
+      <eAnnotations xmi:id="_ut14cZ3ZEeefTMjDv22V2g" source="FK_MODELING_RELATIONSHIP">
+        <details xmi:id="_ut14cp3ZEeefTMjDv22V2g" key="FK_IS_GENERALIZATION" value="true"/>
+        <details xmi:id="_ut14c53ZEeefTMjDv22V2g" key="FK_IS_IDENTIFYING_RELATIONSHIP" value="true"/>
+        <details xmi:id="_ut14dJ3ZEeefTMjDv22V2g" key="FK_PARENT_ROLE_NAME" value=""/>
+        <details xmi:id="_ut14dZ3ZEeefTMjDv22V2g" key="FK_PARENT_MULTIPLICITY" value="1"/>
+        <details xmi:id="_ut14dp3ZEeefTMjDv22V2g" key="FK_CHILD_ROLE_NAME" value="is a"/>
+        <details xmi:id="_ut14d53ZEeefTMjDv22V2g" key="FK_CHILD_MULTIPLICITY" value="0..1"/>
+      </eAnnotations>
+    </constraints>
+  </LUW:LUWTable>
+  <LUW:LUWTable xmi:id="_utsHcJ3ZEeefTMjDv22V2g" name="MOVIE_RENTAL_RECORD" description="A MOVIE RENTAL RECORD is a record that is kept on every MOVIE in the STORE on who and when a MOVIE is rented." label="MOVIE RENTAL RECORD" schema="_utHfsJ3ZEeefTMjDv22V2g" index="_uuNE0p3ZEeefTMjDv22V2g _uuOS9Z3ZEeefTMjDv22V2g _uuOS-Z3ZEeefTMjDv22V2g _uuOS-53ZEeefTMjDv22V2g _uuPhEJ3ZEeefTMjDv22V2g _uuPhE53ZEeefTMjDv22V2g">
+    <extensions xsi:type="Volumetrics:RecordVolumetrics" xmi:id="_utsHcZ3ZEeefTMjDv22V2g"/>
+    <extensions xsi:type="dimensional:Fact" xmi:id="_utsHcp3ZEeefTMjDv22V2g" userDefined="true"/>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_utsHc53ZEeefTMjDv22V2g" name="rental_record_date" description="The date on which the rental transaction is recorded." label="rental record date" nullable="false" defaultValue="">
+      <dependencies xmi:id="_utsHdJ3ZEeefTMjDv22V2g" name="Dependency_rental record date" dependencyType="TRANSFORM TRACEABILITY">
+        <targetEnd href="eMovies.ldm#_uqOjzJ3ZEeefTMjDv22V2g"/>
+      </dependencies>
+      <containedType xsi:type="SQLDataTypes:IntegerDataType" xmi:id="_utsHdZ3ZEeefTMjDv22V2g" name="SMALLINT" primitiveType="SMALLINT" precision="8"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_utsHdp3ZEeefTMjDv22V2g" name="rental_date" description="The date on which the movie was rented." label="rental date" defaultValue="">
+      <dependencies xmi:id="_utsHd53ZEeefTMjDv22V2g" name="Dependency_rental date" dependencyType="TRANSFORM TRACEABILITY">
+        <targetEnd href="eMovies.ldm#_uqPK1J3ZEeefTMjDv22V2g"/>
+      </dependencies>
+      <containedType xsi:type="SQLDataTypes:IntegerDataType" xmi:id="_utsHeJ3ZEeefTMjDv22V2g" name="SMALLINT" primitiveType="SMALLINT" precision="8"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_utsHeZ3ZEeefTMjDv22V2g" name="due_date" description="The date on which the movie is due back to teh store." label="due date" defaultValue="">
+      <dependencies xmi:id="_utsHep3ZEeefTMjDv22V2g" name="Dependency_due date" dependencyType="TRANSFORM TRACEABILITY">
+        <targetEnd href="eMovies.ldm#_uqPK1Z3ZEeefTMjDv22V2g"/>
+      </dependencies>
+      <containedType xsi:type="SQLDataTypes:IntegerDataType" xmi:id="_utsHe53ZEeefTMjDv22V2g" name="SMALLINT" primitiveType="SMALLINT" precision="8"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_utsHfJ3ZEeefTMjDv22V2g" name="rental_status" description="Rental status of the movie copy." label="rental status" defaultValue="">
+      <dependencies xmi:id="_utsHfZ3ZEeefTMjDv22V2g" name="Dependency_rental status" dependencyType="TRANSFORM TRACEABILITY">
+        <targetEnd href="eMovies.ldm#_uqPK1p3ZEeefTMjDv22V2g"/>
+      </dependencies>
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_utsHfp3ZEeefTMjDv22V2g" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="20"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_utsHf53ZEeefTMjDv22V2g" name="overdue_charge" description="The amount owed for an overdue movie rental." label="overdue charge" defaultValue="">
+      <dependencies xmi:id="_utsHgJ3ZEeefTMjDv22V2g" name="Dependency_overdue charge" dependencyType="TRANSFORM TRACEABILITY">
+        <targetEnd href="eMovies.ldm#_uqPK153ZEeefTMjDv22V2g"/>
+      </dependencies>
+      <containedType xsi:type="SQLDataTypes:IntegerDataType" xmi:id="_utsHgZ3ZEeefTMjDv22V2g" name="INTEGER" primitiveType="INTEGER"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_utsHgp3ZEeefTMjDv22V2g" name="rental_rate" description="Amount charged for the rental of a movie." label="rental rate" defaultValue="">
+      <dependencies xmi:id="_utsHg53ZEeefTMjDv22V2g" name="Dependency_rental rate" dependencyType="TRANSFORM TRACEABILITY">
+        <targetEnd href="eMovies.ldm#_uqPK2J3ZEeefTMjDv22V2g"/>
+      </dependencies>
+      <containedType xsi:type="SQLDataTypes:IntegerDataType" xmi:id="_utsHhJ3ZEeefTMjDv22V2g" name="INTEGER" primitiveType="INTEGER"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_utsHhZ3ZEeefTMjDv22V2g" name="payment_transaction_number" description="The unique number associated with the payment." label="payment transaction number" defaultValue="">
+      <dependencies xmi:id="_utsHhp3ZEeefTMjDv22V2g" name="Dependency_payment transaction number" dependencyType="TRANSFORM TRACEABILITY">
+        <targetEnd href="eMovies.ldm#_uqPK2Z3ZEeefTMjDv22V2g"/>
+      </dependencies>
+      <containedType xsi:type="SQLDataTypes:IntegerDataType" xmi:id="_utsHh53ZEeefTMjDv22V2g" name="INTEGER" primitiveType="INTEGER"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_utsHiJ3ZEeefTMjDv22V2g" name="movie_copy_number" description="A unique number identifying the movie copy." label="movie copy number" nullable="false" defaultValue="">
+      <dependencies xmi:id="_utsHiZ3ZEeefTMjDv22V2g" name="Dependency_movie copy number" dependencyType="TRANSFORM TRACEABILITY">
+        <targetEnd href="eMovies.ldm#_uqPK0p3ZEeefTMjDv22V2g"/>
+      </dependencies>
+      <containedType xsi:type="SQLDataTypes:IntegerDataType" xmi:id="_utsHip3ZEeefTMjDv22V2g" name="INTEGER" primitiveType="INTEGER"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_utsugJ3ZEeefTMjDv22V2g" name="movie_number" description="A unique number that identifies a movie." label="movie number" nullable="false" defaultValue="">
+      <dependencies xmi:id="_utsugZ3ZEeefTMjDv22V2g" name="Dependency_movie number" dependencyType="TRANSFORM TRACEABILITY">
+        <targetEnd href="eMovies.ldm#_uqPK053ZEeefTMjDv22V2g"/>
+      </dependencies>
+      <containedType xsi:type="SQLDataTypes:IntegerDataType" xmi:id="_utsugp3ZEeefTMjDv22V2g" name="INTEGER" primitiveType="INTEGER"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_utsug53ZEeefTMjDv22V2g" name="soc_sec_number" description="Social Security Number." label="soc sec number" nullable="false" defaultValue="">
+      <dependencies xmi:id="_utsuhJ3ZEeefTMjDv22V2g" name="Dependency_soc sec number" dependencyType="TRANSFORM TRACEABILITY">
+        <targetEnd href="eMovies.ldm#_uqPK0J3ZEeefTMjDv22V2g"/>
+      </dependencies>
+      <containedType xsi:type="SQLDataTypes:IntegerDataType" xmi:id="_utsuhZ3ZEeefTMjDv22V2g" name="INTEGER" primitiveType="INTEGER"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_utsuhp3ZEeefTMjDv22V2g" name="employee_phone" description="Employee's home phone number." label="employee phone" nullable="false" defaultValue="">
+      <eAnnotations xmi:id="_utsuh53ZEeefTMjDv22V2g" source="ColumnDomain">
+        <details xmi:id="_utsuiJ3ZEeefTMjDv22V2g" key="DomainName" value="file:/D:/TEST/DemoWorkspace/MITI_GIT_Demo/eMovies.ldm?/EMOVIES  7.1/&lt;&lt;Domains>>/phone"/>
+      </eAnnotations>
+      <dependencies xmi:id="_utsuiZ3ZEeefTMjDv22V2g" name="Dependency_employee phone" dependencyType="TRANSFORM TRACEABILITY">
+        <targetEnd href="eMovies.ldm#_uqPK0Z3ZEeefTMjDv22V2g"/>
+      </dependencies>
+      <containedType xsi:type="SQLDataTypes:IntegerDataType" xmi:id="_utsuip3ZEeefTMjDv22V2g" name="INTEGER" primitiveType="INTEGER"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_utsui53ZEeefTMjDv22V2g" name="customer_number" description="A unique number associated with a customer." label="customer number" nullable="false" defaultValue="">
+      <dependencies xmi:id="_utsujJ3ZEeefTMjDv22V2g" name="Dependency_customer number" dependencyType="TRANSFORM TRACEABILITY">
+        <targetEnd href="eMovies.ldm#_uqOjzZ3ZEeefTMjDv22V2g"/>
+      </dependencies>
+      <containedType xsi:type="SQLDataTypes:IntegerDataType" xmi:id="_utsujZ3ZEeefTMjDv22V2g" name="INTEGER" primitiveType="INTEGER"/>
+    </columns>
+    <constraints xsi:type="SQLConstraints:PrimaryKey" xmi:id="_utsujp3ZEeefTMjDv22V2g" name="XPKMOVIE_RENTAL_RECORD" description="" label="XPKMOVIE RENTAL RECORD" members="_utsHc53ZEeefTMjDv22V2g _utsui53ZEeefTMjDv22V2g _utsug53ZEeefTMjDv22V2g _utsuhp3ZEeefTMjDv22V2g _utsHiJ3ZEeefTMjDv22V2g _utsugJ3ZEeefTMjDv22V2g"/>
+    <constraints xsi:type="SQLConstraints:ForeignKey" xmi:id="_ut0DT53ZEeefTMjDv22V2g" name="is_rented_under" description="" label="XIF4MOVIE RENTAL RECORD" members="_utsHiJ3ZEeefTMjDv22V2g _utsugJ3ZEeefTMjDv22V2g" uniqueConstraint="_utqST53ZEeefTMjDv22V2g" referencedTable="_utqSQJ3ZEeefTMjDv22V2g">
+      <eAnnotations xmi:id="_ut0DUJ3ZEeefTMjDv22V2g" source="FK_MODELING_RELATIONSHIP">
+        <details xmi:id="_ut0DUZ3ZEeefTMjDv22V2g" key="FK_IS_IDENTIFYING_RELATIONSHIP" value="true"/>
+        <details xmi:id="_ut0DUp3ZEeefTMjDv22V2g" key="FK_PARENT_ROLE_NAME" value="is rented under"/>
+        <details xmi:id="_ut0DU53ZEeefTMjDv22V2g" key="FK_PARENT_MULTIPLICITY" value="1"/>
+        <details xmi:id="_ut0DVJ3ZEeefTMjDv22V2g" key="FK_CHILD_ROLE_NAME" value="records rental of a"/>
+        <details xmi:id="_ut0DVZ3ZEeefTMjDv22V2g" key="FK_CHILD_MULTIPLICITY" value="*"/>
+      </eAnnotations>
+    </constraints>
+    <constraints xsi:type="SQLConstraints:ForeignKey" xmi:id="_ut1RZZ3ZEeefTMjDv22V2g" name="is_made_on" description="" label="XIF2MOVIE RENTAL RECORD" members="_utsHhZ3ZEeefTMjDv22V2g" uniqueConstraint="_utq5aJ3ZEeefTMjDv22V2g" referencedTable="_utq5UJ3ZEeefTMjDv22V2g">
+      <eAnnotations xmi:id="_ut1RZp3ZEeefTMjDv22V2g" source="FK_MODELING_RELATIONSHIP">
+        <details xmi:id="_ut1RZ53ZEeefTMjDv22V2g" key="FK_IS_IDENTIFYING_RELATIONSHIP" value="false"/>
+        <details xmi:id="_ut1RaJ3ZEeefTMjDv22V2g" key="FK_PARENT_ROLE_NAME" value="is made on"/>
+        <details xmi:id="_ut1RaZ3ZEeefTMjDv22V2g" key="FK_PARENT_MULTIPLICITY" value="0..1"/>
+        <details xmi:id="_ut1Rap3ZEeefTMjDv22V2g" key="FK_CHILD_ROLE_NAME" value="requires"/>
+        <details xmi:id="_ut1Ra53ZEeefTMjDv22V2g" key="FK_CHILD_MULTIPLICITY" value="*"/>
+      </eAnnotations>
+    </constraints>
+    <constraints xsi:type="SQLConstraints:ForeignKey" xmi:id="_ut1Rc53ZEeefTMjDv22V2g" name="completes" description="" label="XIF3MOVIE RENTAL RECORD" members="_utsug53ZEeefTMjDv22V2g _utsuhp3ZEeefTMjDv22V2g" uniqueConstraint="_utlZ7J3ZEeefTMjDv22V2g" referencedTable="_utkysJ3ZEeefTMjDv22V2g">
+      <eAnnotations xmi:id="_ut1RdJ3ZEeefTMjDv22V2g" source="FK_MODELING_RELATIONSHIP">
+        <details xmi:id="_ut1RdZ3ZEeefTMjDv22V2g" key="FK_IS_IDENTIFYING_RELATIONSHIP" value="true"/>
+        <details xmi:id="_ut1Rdp3ZEeefTMjDv22V2g" key="FK_PARENT_ROLE_NAME" value="completes"/>
+        <details xmi:id="_ut1Rd53ZEeefTMjDv22V2g" key="FK_PARENT_MULTIPLICITY" value="1"/>
+        <details xmi:id="_ut1ReJ3ZEeefTMjDv22V2g" key="FK_CHILD_ROLE_NAME" value="is completed by"/>
+        <details xmi:id="_ut1ReZ3ZEeefTMjDv22V2g" key="FK_CHILD_MULTIPLICITY" value="*"/>
+      </eAnnotations>
+    </constraints>
+    <constraints xsi:type="SQLConstraints:ForeignKey" xmi:id="_ut14eJ3ZEeefTMjDv22V2g" name="rents_under_2" description="" label="XIF5MOVIE RENTAL RECORD" members="_utsui53ZEeefTMjDv22V2g" uniqueConstraint="_utrgbZ3ZEeefTMjDv22V2g" referencedTable="_utq5aZ3ZEeefTMjDv22V2g">
+      <eAnnotations xmi:id="_ut14eZ3ZEeefTMjDv22V2g" source="FK_MODELING_RELATIONSHIP">
+        <details xmi:id="_ut14ep3ZEeefTMjDv22V2g" key="FK_IS_IDENTIFYING_RELATIONSHIP" value="true"/>
+        <details xmi:id="_ut14e53ZEeefTMjDv22V2g" key="FK_PARENT_ROLE_NAME" value="rents under_2"/>
+        <details xmi:id="_ut14fJ3ZEeefTMjDv22V2g" key="FK_PARENT_MULTIPLICITY" value="1"/>
+        <details xmi:id="_ut14fZ3ZEeefTMjDv22V2g" key="FK_CHILD_ROLE_NAME" value="identifies_2"/>
+        <details xmi:id="_ut14fp3ZEeefTMjDv22V2g" key="FK_CHILD_MULTIPLICITY" value="*"/>
+      </eAnnotations>
+    </constraints>
+    <constraints xsi:type="SQLConstraints:ForeignKey" xmi:id="_ut14f53ZEeefTMjDv22V2g" name="rents_under_1" description="" label="XIF1MOVIE RENTAL RECORD" members="_utsui53ZEeefTMjDv22V2g" uniqueConstraint="_utmoB53ZEeefTMjDv22V2g" referencedTable="_utmn4J3ZEeefTMjDv22V2g">
+      <eAnnotations xmi:id="_ut14gJ3ZEeefTMjDv22V2g" source="FK_MODELING_RELATIONSHIP">
+        <details xmi:id="_ut14gZ3ZEeefTMjDv22V2g" key="FK_IS_IDENTIFYING_RELATIONSHIP" value="true"/>
+        <details xmi:id="_ut14gp3ZEeefTMjDv22V2g" key="FK_PARENT_ROLE_NAME" value="rents under_1"/>
+        <details xmi:id="_ut14g53ZEeefTMjDv22V2g" key="FK_PARENT_MULTIPLICITY" value="1"/>
+        <details xmi:id="_ut14hJ3ZEeefTMjDv22V2g" key="FK_CHILD_ROLE_NAME" value="identifies_1"/>
+        <details xmi:id="_ut2fgJ3ZEeefTMjDv22V2g" key="FK_CHILD_MULTIPLICITY" value="*"/>
+      </eAnnotations>
+    </constraints>
+  </LUW:LUWTable>
+  <LUW:LUWTable xmi:id="_uttVkJ3ZEeefTMjDv22V2g" name="STORE" description="A STORE is one of the MOVIE STORES that a customer can rent a MOVIE from." label="STORE" schema="_utHfsJ3ZEeefTMjDv22V2g" index="_uuNE1J3ZEeefTMjDv22V2g _uuO6EJ3ZEeefTMjDv22V2g" referencingForeignKeys="_ut0DSJ3ZEeefTMjDv22V2g _ut0DVp3ZEeefTMjDv22V2g _ut1RbJ3ZEeefTMjDv22V2g">
+    <extensions xsi:type="Volumetrics:RecordVolumetrics" xmi:id="_uttVkZ3ZEeefTMjDv22V2g"/>
+    <extensions xsi:type="dimensional:Outrigger" xmi:id="_uttVkp3ZEeefTMjDv22V2g" userDefined="true"/>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_uttVk53ZEeefTMjDv22V2g" name="store_number" description="A unique identifier of the video store." label="store number" nullable="false" defaultValue="">
+      <dependencies xmi:id="_uttVlJ3ZEeefTMjDv22V2g" name="Dependency_store number" dependencyType="TRANSFORM TRACEABILITY">
+        <targetEnd href="eMovies.ldm#_uqPx453ZEeefTMjDv22V2g"/>
+      </dependencies>
+      <containedType xsi:type="SQLDataTypes:IntegerDataType" xmi:id="_uttVlZ3ZEeefTMjDv22V2g" name="INTEGER" primitiveType="INTEGER"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_uttVlp3ZEeefTMjDv22V2g" name="store_manager" description="The employee who manages the video store." label="store manager" defaultValue="">
+      <eAnnotations xmi:id="_uttVl53ZEeefTMjDv22V2g" source="ColumnDomain">
+        <details xmi:id="_uttVmJ3ZEeefTMjDv22V2g" key="DomainName" value="file:/D:/TEST/DemoWorkspace/MITI_GIT_Demo/eMovies.ldm?/EMOVIES  7.1/&lt;&lt;Domains>>/manager"/>
+      </eAnnotations>
+      <dependencies xmi:id="_uttVmZ3ZEeefTMjDv22V2g" name="Dependency_store manager" dependencyType="TRANSFORM TRACEABILITY">
+        <targetEnd href="eMovies.ldm#_uqPx5J3ZEeefTMjDv22V2g"/>
+      </dependencies>
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_uttVmp3ZEeefTMjDv22V2g" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="20"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_uttVm53ZEeefTMjDv22V2g" name="store_address" description="The first line of the street address of the store." label="store address" defaultValue="">
+      <eAnnotations xmi:id="_uttVnJ3ZEeefTMjDv22V2g" source="ColumnDomain">
+        <details xmi:id="_uttVnZ3ZEeefTMjDv22V2g" key="DomainName" value="file:/D:/TEST/DemoWorkspace/MITI_GIT_Demo/eMovies.ldm?/EMOVIES  7.1/&lt;&lt;Domains>>/address"/>
+      </eAnnotations>
+      <dependencies xmi:id="_uttVnp3ZEeefTMjDv22V2g" name="Dependency_store address" dependencyType="TRANSFORM TRACEABILITY">
+        <targetEnd href="eMovies.ldm#_uqPx5Z3ZEeefTMjDv22V2g"/>
+      </dependencies>
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_uttVn53ZEeefTMjDv22V2g" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="20"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_uttVoJ3ZEeefTMjDv22V2g" name="store_address_2" description="The second line of the street address of the store." label="store address 2" defaultValue="">
+      <eAnnotations xmi:id="_uttVoZ3ZEeefTMjDv22V2g" source="ColumnDomain">
+        <details xmi:id="_uttVop3ZEeefTMjDv22V2g" key="DomainName" value="file:/D:/TEST/DemoWorkspace/MITI_GIT_Demo/eMovies.ldm?/EMOVIES  7.1/&lt;&lt;Domains>>/address 2"/>
+      </eAnnotations>
+      <dependencies xmi:id="_uttVo53ZEeefTMjDv22V2g" name="Dependency_store address 2" dependencyType="TRANSFORM TRACEABILITY">
+        <targetEnd href="eMovies.ldm#_uqPx5p3ZEeefTMjDv22V2g"/>
+      </dependencies>
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_uttVpJ3ZEeefTMjDv22V2g" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="20"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_uttVpZ3ZEeefTMjDv22V2g" name="store_phone" description="The store's phone number." label="store phone" defaultValue="">
+      <eAnnotations xmi:id="_uttVpp3ZEeefTMjDv22V2g" source="ColumnDomain">
+        <details xmi:id="_uttVp53ZEeefTMjDv22V2g" key="DomainName" value="file:/D:/TEST/DemoWorkspace/MITI_GIT_Demo/eMovies.ldm?/EMOVIES  7.1/&lt;&lt;Domains>>/phone"/>
+      </eAnnotations>
+      <dependencies xmi:id="_uttVqJ3ZEeefTMjDv22V2g" name="Dependency_store phone" dependencyType="TRANSFORM TRACEABILITY">
+        <targetEnd href="eMovies.ldm#_uqPx553ZEeefTMjDv22V2g"/>
+      </dependencies>
+      <containedType xsi:type="SQLDataTypes:IntegerDataType" xmi:id="_uttVqZ3ZEeefTMjDv22V2g" name="INTEGER" primitiveType="INTEGER"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_uttVqp3ZEeefTMjDv22V2g" name="store_city" description="The city associated with the store's address." label="store city" defaultValue="">
+      <eAnnotations xmi:id="_uttVq53ZEeefTMjDv22V2g" source="ColumnDomain">
+        <details xmi:id="_uttVrJ3ZEeefTMjDv22V2g" key="DomainName" value="file:/D:/TEST/DemoWorkspace/MITI_GIT_Demo/eMovies.ldm?/EMOVIES  7.1/&lt;&lt;Domains>>/city"/>
+      </eAnnotations>
+      <dependencies xmi:id="_uttVrZ3ZEeefTMjDv22V2g" name="Dependency_store city" dependencyType="TRANSFORM TRACEABILITY">
+        <targetEnd href="eMovies.ldm#_uqPx6J3ZEeefTMjDv22V2g"/>
+      </dependencies>
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_uttVrp3ZEeefTMjDv22V2g" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="20"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_uttVr53ZEeefTMjDv22V2g" name="store_state" description="The state associated with the store's address." label="store state" defaultValue="">
+      <eAnnotations xmi:id="_uttVsJ3ZEeefTMjDv22V2g" source="ColumnDomain">
+        <details xmi:id="_uttVsZ3ZEeefTMjDv22V2g" key="DomainName" value="file:/D:/TEST/DemoWorkspace/MITI_GIT_Demo/eMovies.ldm?/EMOVIES  7.1/&lt;&lt;Domains>>/state"/>
+      </eAnnotations>
+      <dependencies xmi:id="_uttVsp3ZEeefTMjDv22V2g" name="Dependency_store state" dependencyType="TRANSFORM TRACEABILITY">
+        <targetEnd href="eMovies.ldm#_uqPx6Z3ZEeefTMjDv22V2g"/>
+      </dependencies>
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_uttVs53ZEeefTMjDv22V2g" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="20"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_uttVtJ3ZEeefTMjDv22V2g" name="store_zip_code" description="The zip code associated with the store's address." label="store zip code" defaultValue="">
+      <eAnnotations xmi:id="_uttVtZ3ZEeefTMjDv22V2g" source="ColumnDomain">
+        <details xmi:id="_uttVtp3ZEeefTMjDv22V2g" key="DomainName" value="file:/D:/TEST/DemoWorkspace/MITI_GIT_Demo/eMovies.ldm?/EMOVIES  7.1/&lt;&lt;Domains>>/zip code"/>
+      </eAnnotations>
+      <dependencies xmi:id="_uttVt53ZEeefTMjDv22V2g" name="Dependency_store zip code" dependencyType="TRANSFORM TRACEABILITY">
+        <targetEnd href="eMovies.ldm#_uqPx6p3ZEeefTMjDv22V2g"/>
+      </dependencies>
+      <containedType xsi:type="SQLDataTypes:IntegerDataType" xmi:id="_uttVuJ3ZEeefTMjDv22V2g" name="INTEGER" primitiveType="INTEGER"/>
+    </columns>
+    <constraints xsi:type="SQLConstraints:PrimaryKey" xmi:id="_uttVuZ3ZEeefTMjDv22V2g" name="XPKSTORE" description="" label="XPKSTORE" members="_uttVk53ZEeefTMjDv22V2g" ForeignKey="_ut0DSJ3ZEeefTMjDv22V2g _ut0DVp3ZEeefTMjDv22V2g _ut1RbJ3ZEeefTMjDv22V2g"/>
+  </LUW:LUWTable>
+  <LUW:LUWView xmi:id="_utwY4J3ZEeefTMjDv22V2g" name="CUSTOMER_INVOICE" description="" label="CUSTOMER_INVOICE" schema="_utHfsJ3ZEeefTMjDv22V2g">
+    <dependencies xmi:id="_uuQIIJ3ZEeefTMjDv22V2g" name="R_17" description="" label="R/17" targetEnd="_utmn4J3ZEeefTMjDv22V2g"/>
+    <dependencies xmi:id="_uuQIIZ3ZEeefTMjDv22V2g" name="R_18" description="" label="R/18" targetEnd="_utsHcJ3ZEeefTMjDv22V2g"/>
+    <dependencies xmi:id="_uuQIIp3ZEeefTMjDv22V2g" name="R_21" description="" label="R/21/1" targetEnd="_utpEIJ3ZEeefTMjDv22V2g"/>
+    <dependencies xmi:id="_uuQII53ZEeefTMjDv22V2g" name="R_22" description="" label="R/22" targetEnd="_utq5aZ3ZEeefTMjDv22V2g"/>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_utw_8J3ZEeefTMjDv22V2g" name="credit_card" description="The credit card number associated with a customer." label="credit_card" defaultValue="">
+      <containedType xsi:type="SQLDataTypes:IntegerDataType" xmi:id="_utw_8Z3ZEeefTMjDv22V2g" name="INTEGER" primitiveType="INTEGER"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_utw_8p3ZEeefTMjDv22V2g" name="credit_card_exp" description="Expiration date on the customer's credit card." label="credit_card_exp" defaultValue="">
+      <containedType xsi:type="SQLDataTypes:IntegerDataType" xmi:id="_utw_853ZEeefTMjDv22V2g" name="SMALLINT" primitiveType="SMALLINT" precision="8"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_utw_9J3ZEeefTMjDv22V2g" name="status_code" description="Payment status associated with a customer." label="status_code" defaultValue="">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_utw_9Z3ZEeefTMjDv22V2g" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="20"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_utw_9p3ZEeefTMjDv22V2g" name="customer_number" description="A unique number associated with a customer." label="customer_number" nullable="false" defaultValue="">
+      <containedType xsi:type="SQLDataTypes:IntegerDataType" xmi:id="_utw_953ZEeefTMjDv22V2g" name="INTEGER" primitiveType="INTEGER"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_utw_-J3ZEeefTMjDv22V2g" name="customer_first_name" description="First name of a customer." label="customer_first_name" defaultValue="">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_utw_-Z3ZEeefTMjDv22V2g" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="20"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_utw_-p3ZEeefTMjDv22V2g" name="customer_last_name" description="Last name of a customer." label="customer_last_name" defaultValue="">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_utw_-53ZEeefTMjDv22V2g" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="20"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_utw__J3ZEeefTMjDv22V2g" name="customer_address" description="Street address of the customer." label="customer_address" defaultValue="">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_utw__Z3ZEeefTMjDv22V2g" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="20"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_utw__p3ZEeefTMjDv22V2g" name="customer_city" description="City associated with customer's address." label="customer_city" defaultValue="">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_utw__53ZEeefTMjDv22V2g" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="20"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_utxAAJ3ZEeefTMjDv22V2g" name="customer_state" description="The two-character state abbreviation associated with customer's address." label="customer_state" defaultValue="">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_utxAAZ3ZEeefTMjDv22V2g" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="20"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_utxAAp3ZEeefTMjDv22V2g" name="customer_zip_code" description="The zip-code associated with customer's address." label="customer_zip_code" defaultValue="">
+      <containedType xsi:type="SQLDataTypes:IntegerDataType" xmi:id="_utxAA53ZEeefTMjDv22V2g" name="INTEGER" primitiveType="INTEGER"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_utxABJ3ZEeefTMjDv22V2g" name="email" description="The email address associated with a customer." label="email" defaultValue="">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_utxABZ3ZEeefTMjDv22V2g" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="50"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_utxABp3ZEeefTMjDv22V2g" name="rental_record_date" description="The date on which the rental transaction is recorded." label="rental_record_date" nullable="false" defaultValue="">
+      <containedType xsi:type="SQLDataTypes:IntegerDataType" xmi:id="_utxAB53ZEeefTMjDv22V2g" name="SMALLINT" primitiveType="SMALLINT" precision="8"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_utxACJ3ZEeefTMjDv22V2g" name="movie_copy_number" description="A unique number identifying the movie copy." label="movie_copy_number" nullable="false" defaultValue="">
+      <containedType xsi:type="SQLDataTypes:IntegerDataType" xmi:id="_utxACZ3ZEeefTMjDv22V2g" name="INTEGER" primitiveType="INTEGER"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_utxACp3ZEeefTMjDv22V2g" name="movie_number" description="A unique number that identifies a movie." label="movie_number" nullable="false" defaultValue="">
+      <containedType xsi:type="SQLDataTypes:IntegerDataType" xmi:id="_utxAC53ZEeefTMjDv22V2g" name="INTEGER" primitiveType="INTEGER"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_utxADJ3ZEeefTMjDv22V2g" name="rental_date" description="The date on which the movie was rented." label="rental_date" defaultValue="">
+      <containedType xsi:type="SQLDataTypes:IntegerDataType" xmi:id="_utxADZ3ZEeefTMjDv22V2g" name="SMALLINT" primitiveType="SMALLINT" precision="8"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_utxADp3ZEeefTMjDv22V2g" name="due_date" description="The date on which the movie is due back to teh store." label="due_date" defaultValue="">
+      <containedType xsi:type="SQLDataTypes:IntegerDataType" xmi:id="_utxAD53ZEeefTMjDv22V2g" name="SMALLINT" primitiveType="SMALLINT" precision="8"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_utxAEJ3ZEeefTMjDv22V2g" name="rental_status" description="Rental status of the movie copy." label="rental_status" defaultValue="">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_utxAEZ3ZEeefTMjDv22V2g" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="20"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_utxAEp3ZEeefTMjDv22V2g" name="rental_rate" description="Amount charged for the rental of a movie." label="rental_rate" defaultValue="">
+      <containedType xsi:type="SQLDataTypes:IntegerDataType" xmi:id="_utxAE53ZEeefTMjDv22V2g" name="INTEGER" primitiveType="INTEGER"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_utxAFJ3ZEeefTMjDv22V2g" name="overdue_charge" description="The amount owed for an overdue movie rental." label="overdue_charge" defaultValue="">
+      <containedType xsi:type="SQLDataTypes:IntegerDataType" xmi:id="_utxAFZ3ZEeefTMjDv22V2g" name="INTEGER" primitiveType="INTEGER"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_utxAFp3ZEeefTMjDv22V2g" name="movie_title" description="" label="movie_title" defaultValue="">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_utxAF53ZEeefTMjDv22V2g" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="20"/>
+    </columns>
+    <queryExpression xsi:type="SQLExpressions:QueryExpressionDefault" xmi:id="_utxAGJ3ZEeefTMjDv22V2g" SQL="SELECT CUSTOMER_CREDIT.credit_card, CUSTOMER_CREDIT.credit_card_exp, CUSTOMER_CREDIT.status_code, CUSTOMER.customer_number, CUSTOMER.customer_first_name, CUSTOMER.customer_last_name, CUSTOMER.customer_address, CUSTOMER.customer_city, CUSTOMER.customer_state, CUSTOMER.customer_zip_code, CUSTOMER.email, MOVIE_RENTAL_RECORD.rental_record_date, MOVIE_RENTAL_RECORD.movie_copy_number, MOVIE_RENTAL_RECORD.movie_number, MOVIE_RENTAL_RECORD.rental_date, MOVIE_RENTAL_RECORD.due_date, MOVIE_RENTAL_RECORD.rental_status, MOVIE_RENTAL_RECORD.rental_rate, MOVIE_RENTAL_RECORD.overdue_charge, MOVIE.movie_title FROM CUSTOMER_CREDIT, MOVIE, MOVIE_RENTAL_RECORD, CUSTOMER"/>
+  </LUW:LUWView>
+  <LUW:LUWView xmi:id="_utyOEJ3ZEeefTMjDv22V2g" name="OVERDUE_NOTICE" description="" label="OVERDUE_NOTICE" schema="_utHfsJ3ZEeefTMjDv22V2g">
+    <dependencies xmi:id="_uuQIJJ3ZEeefTMjDv22V2g" name="R_16" description="" label="R/16" targetEnd="_utq5aZ3ZEeefTMjDv22V2g"/>
+    <dependencies xmi:id="_uuQIJZ3ZEeefTMjDv22V2g" name="R_19" description="" label="R/19" targetEnd="_utsHcJ3ZEeefTMjDv22V2g"/>
+    <dependencies xmi:id="_uuQIJp3ZEeefTMjDv22V2g" name="R_20" description="" label="R/20/1" targetEnd="_utmn4J3ZEeefTMjDv22V2g"/>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_utyOEZ3ZEeefTMjDv22V2g" name="credit_card" description="The credit card number associated with a customer." label="credit_card" defaultValue="">
+      <containedType xsi:type="SQLDataTypes:IntegerDataType" xmi:id="_utyOEp3ZEeefTMjDv22V2g" name="INTEGER" primitiveType="INTEGER"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_utyOE53ZEeefTMjDv22V2g" name="credit_card_exp" description="Expiration date on the customer's credit card." label="credit_card_exp" defaultValue="">
+      <containedType xsi:type="SQLDataTypes:IntegerDataType" xmi:id="_utyOFJ3ZEeefTMjDv22V2g" name="SMALLINT" primitiveType="SMALLINT" precision="8"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_utyOFZ3ZEeefTMjDv22V2g" name="status_code" description="Payment status associated with a customer." label="status_code" defaultValue="">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_utyOFp3ZEeefTMjDv22V2g" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="20"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_utyOF53ZEeefTMjDv22V2g" name="customer_number" description="A unique number associated with a customer." label="customer_number" nullable="false" defaultValue="">
+      <containedType xsi:type="SQLDataTypes:IntegerDataType" xmi:id="_utyOGJ3ZEeefTMjDv22V2g" name="INTEGER" primitiveType="INTEGER"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_utyOGZ3ZEeefTMjDv22V2g" name="customer_first_name" description="First name of a customer." label="customer_first_name" defaultValue="">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_utyOGp3ZEeefTMjDv22V2g" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="20"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_utyOG53ZEeefTMjDv22V2g" name="customer_last_name" description="Last name of a customer." label="customer_last_name" defaultValue="">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_utyOHJ3ZEeefTMjDv22V2g" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="20"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_utyOHZ3ZEeefTMjDv22V2g" name="customer_address" description="Street address of the customer." label="customer_address" defaultValue="">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_utyOHp3ZEeefTMjDv22V2g" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="20"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_utyOH53ZEeefTMjDv22V2g" name="customer_city" description="City associated with customer's address." label="customer_city" defaultValue="">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_utyOIJ3ZEeefTMjDv22V2g" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="20"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_utyOIZ3ZEeefTMjDv22V2g" name="customer_state" description="The two-character state abbreviation associated with customer's address." label="customer_state" defaultValue="">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_utyOIp3ZEeefTMjDv22V2g" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="20"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_utyOI53ZEeefTMjDv22V2g" name="customer_zip_code" description="The zip-code associated with customer's address." label="customer_zip_code" defaultValue="">
+      <containedType xsi:type="SQLDataTypes:IntegerDataType" xmi:id="_utyOJJ3ZEeefTMjDv22V2g" name="INTEGER" primitiveType="INTEGER"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_utyOJZ3ZEeefTMjDv22V2g" name="email" description="The email address associated with a customer." label="email" defaultValue="">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_utyOJp3ZEeefTMjDv22V2g" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="50"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_utyOJ53ZEeefTMjDv22V2g" name="rental_record_date" description="The date on which the rental transaction is recorded." label="rental_record_date" nullable="false" defaultValue="">
+      <containedType xsi:type="SQLDataTypes:IntegerDataType" xmi:id="_utyOKJ3ZEeefTMjDv22V2g" name="SMALLINT" primitiveType="SMALLINT" precision="8"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_utyOKZ3ZEeefTMjDv22V2g" name="movie_copy_number" description="A unique number identifying the movie copy." label="movie_copy_number" nullable="false" defaultValue="">
+      <containedType xsi:type="SQLDataTypes:IntegerDataType" xmi:id="_utyOKp3ZEeefTMjDv22V2g" name="INTEGER" primitiveType="INTEGER"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_utyOK53ZEeefTMjDv22V2g" name="movie_number" description="A unique number that identifies a movie." label="movie_number" nullable="false" defaultValue="">
+      <containedType xsi:type="SQLDataTypes:IntegerDataType" xmi:id="_utyOLJ3ZEeefTMjDv22V2g" name="INTEGER" primitiveType="INTEGER"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_utyOLZ3ZEeefTMjDv22V2g" name="rental_date" description="The date on which the movie was rented." label="rental_date" defaultValue="">
+      <containedType xsi:type="SQLDataTypes:IntegerDataType" xmi:id="_utyOLp3ZEeefTMjDv22V2g" name="SMALLINT" primitiveType="SMALLINT" precision="8"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_utyOL53ZEeefTMjDv22V2g" name="due_date" description="The date on which the movie is due back to teh store." label="due_date" defaultValue="">
+      <containedType xsi:type="SQLDataTypes:IntegerDataType" xmi:id="_utyOMJ3ZEeefTMjDv22V2g" name="SMALLINT" primitiveType="SMALLINT" precision="8"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_utyOMZ3ZEeefTMjDv22V2g" name="rental_status" description="Rental status of the movie copy." label="rental_status" defaultValue="">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_utyOMp3ZEeefTMjDv22V2g" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="20"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_utyOM53ZEeefTMjDv22V2g" name="rental_rate" description="Amount charged for the rental of a movie." label="rental_rate" defaultValue="">
+      <containedType xsi:type="SQLDataTypes:IntegerDataType" xmi:id="_utyONJ3ZEeefTMjDv22V2g" name="INTEGER" primitiveType="INTEGER"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_utyONZ3ZEeefTMjDv22V2g" name="overdue_charge" description="The amount owed for an overdue movie rental." label="overdue_charge" defaultValue="">
+      <containedType xsi:type="SQLDataTypes:IntegerDataType" xmi:id="_utyONp3ZEeefTMjDv22V2g" name="INTEGER" primitiveType="INTEGER"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_utyON53ZEeefTMjDv22V2g" name="Overdue_Charge_Rate" description="" label="Overdue_Charge_Rate" defaultValue="">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_utyOOJ3ZEeefTMjDv22V2g" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="0"/>
+    </columns>
+    <queryExpression xsi:type="SQLExpressions:QueryExpressionDefault" xmi:id="_utyOOZ3ZEeefTMjDv22V2g" SQL="SELECT CUSTOMER_CREDIT.credit_card, CUSTOMER_CREDIT.credit_card_exp, CUSTOMER_CREDIT.status_code, CUSTOMER.customer_number, CUSTOMER.customer_first_name, CUSTOMER.customer_last_name, CUSTOMER.customer_address, CUSTOMER.customer_city, CUSTOMER.customer_state, CUSTOMER.customer_zip_code, CUSTOMER.email, MOVIE_RENTAL_RECORD.rental_record_date, MOVIE_RENTAL_RECORD.movie_copy_number, MOVIE_RENTAL_RECORD.movie_number, MOVIE_RENTAL_RECORD.rental_date, MOVIE_RENTAL_RECORD.due_date, MOVIE_RENTAL_RECORD.rental_status, MOVIE_RENTAL_RECORD.rental_rate, MOVIE_RENTAL_RECORD.overdue_charge, rental_rate * 1.5 FROM CUSTOMER_CREDIT, CUSTOMER, MOVIE_RENTAL_RECORD"/>
+  </LUW:LUWView>
+  <LUW:LUWIndex xmi:id="_uuNE0J3ZEeefTMjDv22V2g" name="XIE1EMPLOYEE" description="" label="XIE1EMPLOYEE" Schema="_utHfsJ3ZEeefTMjDv22V2g" table="_utkysJ3ZEeefTMjDv22V2g">
+    <members xmi:id="_uuNE0Z3ZEeefTMjDv22V2g" name="employee_first_name" description="" column="_utlZwp3ZEeefTMjDv22V2g"/>
+  </LUW:LUWIndex>
+  <LUW:LUWIndex xmi:id="_uuNE0p3ZEeefTMjDv22V2g" name="XIF1MOVIE_RENTAL_RECORD" description="" label="XIF1MOVIE RENTAL RECORD" Schema="_utHfsJ3ZEeefTMjDv22V2g" table="_utsHcJ3ZEeefTMjDv22V2g">
+    <members xmi:id="_uuNE053ZEeefTMjDv22V2g" name="customer_number" description="" column="_utsui53ZEeefTMjDv22V2g"/>
+  </LUW:LUWIndex>
+  <LUW:LUWIndex xmi:id="_uuNE1J3ZEeefTMjDv22V2g" name="XPKSTORE" description="" label="XPKSTORE" Schema="_utHfsJ3ZEeefTMjDv22V2g" clustered="true" unique="true" table="_uttVkJ3ZEeefTMjDv22V2g">
+    <members xmi:id="_uuNE1Z3ZEeefTMjDv22V2g" name="store_number" description="" column="_uttVk53ZEeefTMjDv22V2g"/>
+  </LUW:LUWIndex>
+  <LUW:LUWIndex xmi:id="_uuNE1p3ZEeefTMjDv22V2g" name="XIF2CHECK" description="" label="Foreign Key2" Schema="_utHfsJ3ZEeefTMjDv22V2g" table="_utprMJ3ZEeefTMjDv22V2g">
+    <members xmi:id="_uuNE153ZEeefTMjDv22V2g" name="payment_transaction_number" description="" column="_utprM53ZEeefTMjDv22V2g"/>
+  </LUW:LUWIndex>
+  <LUW:LUWIndex xmi:id="_uuNE2J3ZEeefTMjDv22V2g" name="XIF2CREDIT_CARD" description="" label="Foreign Key2" Schema="_utHfsJ3ZEeefTMjDv22V2g" table="_utrgbp3ZEeefTMjDv22V2g">
+    <members xmi:id="_uuNE2Z3ZEeefTMjDv22V2g" name="payment_transaction_number" description="" column="_utrgcZ3ZEeefTMjDv22V2g"/>
+  </LUW:LUWIndex>
+  <LUW:LUWIndex xmi:id="_uuNE2p3ZEeefTMjDv22V2g" name="XIF2EMPLOYEE" description="" label="XIF2EMPLOYEE" Schema="_utHfsJ3ZEeefTMjDv22V2g" table="_utkysJ3ZEeefTMjDv22V2g">
+    <members xmi:id="_uuNE253ZEeefTMjDv22V2g" name="supervisor" description="" column="_utlZ6J3ZEeefTMjDv22V2g"/>
+  </LUW:LUWIndex>
+  <LUW:LUWIndex xmi:id="_uuNE3J3ZEeefTMjDv22V2g" name="XIF2E_PAYMENT" description="" label="Foreign Key2" Schema="_utHfsJ3ZEeefTMjDv22V2g" table="_utiWcJ3ZEeefTMjDv22V2g">
+    <members xmi:id="_uuNE3Z3ZEeefTMjDv22V2g" name="payment_transaction_number" description="" column="_utiWc53ZEeefTMjDv22V2g"/>
+  </LUW:LUWIndex>
+  <LUW:LUWIndex xmi:id="_uuNr4J3ZEeefTMjDv22V2g" name="XIE1CUSTOMER" description="" label="XIE1CUSTOMER" Schema="_utHfsJ3ZEeefTMjDv22V2g" table="_utmn4J3ZEeefTMjDv22V2g">
+    <members xmi:id="_uuNr4Z3ZEeefTMjDv22V2g" name="customer_last_name" description="" column="_utmn653ZEeefTMjDv22V2g"/>
+  </LUW:LUWIndex>
+  <LUW:LUWIndex xmi:id="_uuNr4p3ZEeefTMjDv22V2g" name="XIF3PAYMENT" description="" label="XIF3PAYMENT" Schema="_utHfsJ3ZEeefTMjDv22V2g" table="_utq5UJ3ZEeefTMjDv22V2g">
+    <members xmi:id="_uuNr453ZEeefTMjDv22V2g" name="customer_number" description="" column="_utq5U53ZEeefTMjDv22V2g"/>
+  </LUW:LUWIndex>
+  <LUW:LUWIndex xmi:id="_uuNr5J3ZEeefTMjDv22V2g" name="XIF4PAYMENT" description="" label="XIF4PAYMENT" Schema="_utHfsJ3ZEeefTMjDv22V2g" table="_utq5UJ3ZEeefTMjDv22V2g">
+    <members xmi:id="_uuNr5Z3ZEeefTMjDv22V2g" name="customer_number" description="" column="_utq5U53ZEeefTMjDv22V2g"/>
+  </LUW:LUWIndex>
+  <LUW:LUWIndex xmi:id="_uuNr5p3ZEeefTMjDv22V2g" name="XPKCHECK" description="" label="XPKCHECK" Schema="_utHfsJ3ZEeefTMjDv22V2g" clustered="true" unique="true" table="_utprMJ3ZEeefTMjDv22V2g">
+    <members xmi:id="_uuNr553ZEeefTMjDv22V2g" name="payment_transaction_number" description="" column="_utprM53ZEeefTMjDv22V2g"/>
+  </LUW:LUWIndex>
+  <LUW:LUWIndex xmi:id="_uuNr6J3ZEeefTMjDv22V2g" name="XIF2MOVIE_STORE" description="" label="XIF2MOVIE STORE" Schema="_utHfsJ3ZEeefTMjDv22V2g" table="_utnO8J3ZEeefTMjDv22V2g">
+    <members xmi:id="_uuNr6Z3ZEeefTMjDv22V2g" name="store_number" description="" column="_utnO9p3ZEeefTMjDv22V2g"/>
+  </LUW:LUWIndex>
+  <LUW:LUWIndex xmi:id="_uuNr6p3ZEeefTMjDv22V2g" name="XIF1EMPLOYEE" description="" label="XIF1EMPLOYEE" Schema="_utHfsJ3ZEeefTMjDv22V2g" table="_utkysJ3ZEeefTMjDv22V2g">
+    <members xmi:id="_uuNr653ZEeefTMjDv22V2g" name="store_number" description="" column="_utlZ2J3ZEeefTMjDv22V2g"/>
+  </LUW:LUWIndex>
+  <LUW:LUWIndex xmi:id="_uuNr7J3ZEeefTMjDv22V2g" name="XPKEMPLOYEE" description="" label="XPKEMPLOYEE" Schema="_utHfsJ3ZEeefTMjDv22V2g" clustered="true" unique="true" table="_utkysJ3ZEeefTMjDv22V2g">
+    <members xmi:id="_uuNr7Z3ZEeefTMjDv22V2g" name="employee_number" description="" column="_utlZ5Z3ZEeefTMjDv22V2g"/>
+  </LUW:LUWIndex>
+  <LUW:LUWIndex xmi:id="_uuNr7p3ZEeefTMjDv22V2g" name="XIF1MOVIE_COPY" description="" label="XIF1MOVIE COPY" Schema="_utHfsJ3ZEeefTMjDv22V2g" table="_utqSQJ3ZEeefTMjDv22V2g">
+    <members xmi:id="_uuNr753ZEeefTMjDv22V2g" name="movie_number" description="" column="_utqSTJ3ZEeefTMjDv22V2g"/>
+  </LUW:LUWIndex>
+  <LUW:LUWIndex xmi:id="_uuNr8J3ZEeefTMjDv22V2g" name="XIF1RECEIPT_OUTRIGGER" description="" label="Foreign Key1" Schema="_utHfsJ3ZEeefTMjDv22V2g" table="_utmA0J3ZEeefTMjDv22V2g">
+    <members xmi:id="_uuOS8J3ZEeefTMjDv22V2g" name="payment_transaction_number" description="" column="_utmA1Z3ZEeefTMjDv22V2g"/>
+  </LUW:LUWIndex>
+  <LUW:LUWIndex xmi:id="_uuOS8Z3ZEeefTMjDv22V2g" name="XAK1MOVIE" description="" label="XAK1MOVIE" Schema="_utHfsJ3ZEeefTMjDv22V2g" unique="true" table="_utpEIJ3ZEeefTMjDv22V2g">
+    <members xmi:id="_uuOS8p3ZEeefTMjDv22V2g" name="movie_title" description="" column="_utpEI53ZEeefTMjDv22V2g"/>
+  </LUW:LUWIndex>
+  <LUW:LUWIndex xmi:id="_uuOS853ZEeefTMjDv22V2g" name="XIF2RECEIPT_OUTRIGGER" description="" label="Foreign Key2" Schema="_utHfsJ3ZEeefTMjDv22V2g" table="_utmA0J3ZEeefTMjDv22V2g">
+    <members xmi:id="_uuOS9J3ZEeefTMjDv22V2g" name="store_number" description="" column="_utmA153ZEeefTMjDv22V2g"/>
+  </LUW:LUWIndex>
+  <LUW:LUWIndex xmi:id="_uuOS9Z3ZEeefTMjDv22V2g" name="XIF5MOVIE_RENTAL_RECORD" description="" label="XIF5MOVIE RENTAL RECORD" Schema="_utHfsJ3ZEeefTMjDv22V2g" table="_utsHcJ3ZEeefTMjDv22V2g">
+    <members xmi:id="_uuOS9p3ZEeefTMjDv22V2g" name="customer_number" description="" column="_utsui53ZEeefTMjDv22V2g"/>
+  </LUW:LUWIndex>
+  <LUW:LUWIndex xmi:id="_uuOS953ZEeefTMjDv22V2g" name="XPKCUSTOMER_CREDIT" description="" label="XPKCUSTOMER CREDIT" Schema="_utHfsJ3ZEeefTMjDv22V2g" clustered="true" unique="true" table="_utq5aZ3ZEeefTMjDv22V2g">
+    <members xmi:id="_uuOS-J3ZEeefTMjDv22V2g" name="customer_number" description="" column="_utrgYZ3ZEeefTMjDv22V2g"/>
+  </LUW:LUWIndex>
+  <LUW:LUWIndex xmi:id="_uuOS-Z3ZEeefTMjDv22V2g" name="XIF2MOVIE_RENTAL_RECORD" description="" label="XIF2MOVIE RENTAL RECORD" Schema="_utHfsJ3ZEeefTMjDv22V2g" table="_utsHcJ3ZEeefTMjDv22V2g">
+    <members xmi:id="_uuOS-p3ZEeefTMjDv22V2g" name="payment_transaction_number" description="" column="_utsHhZ3ZEeefTMjDv22V2g"/>
+  </LUW:LUWIndex>
+  <LUW:LUWIndex xmi:id="_uuOS-53ZEeefTMjDv22V2g" name="XIF4MOVIE_RENTAL_RECORD" description="" label="XIF4MOVIE RENTAL RECORD" Schema="_utHfsJ3ZEeefTMjDv22V2g" table="_utsHcJ3ZEeefTMjDv22V2g">
+    <members xmi:id="_uuOS_J3ZEeefTMjDv22V2g" name="movie_copy_number" description="" column="_utsHiJ3ZEeefTMjDv22V2g"/>
+    <members xmi:id="_uuOS_Z3ZEeefTMjDv22V2g" name="movie_number" description="" column="_utsugJ3ZEeefTMjDv22V2g"/>
+  </LUW:LUWIndex>
+  <LUW:LUWIndex xmi:id="_uuOS_p3ZEeefTMjDv22V2g" name="XAK1EMPLOYEE" description="" label="XAK1EMPLOYEE" Schema="_utHfsJ3ZEeefTMjDv22V2g" unique="true" table="_utkysJ3ZEeefTMjDv22V2g">
+    <members xmi:id="_uuOS_53ZEeefTMjDv22V2g" name="soc_sec_number" description="" column="_utlZx53ZEeefTMjDv22V2g"/>
+    <members xmi:id="_uuOTAJ3ZEeefTMjDv22V2g" name="employee_phone" description="" column="_utlZ253ZEeefTMjDv22V2g"/>
+  </LUW:LUWIndex>
+  <LUW:LUWIndex xmi:id="_uuO6AJ3ZEeefTMjDv22V2g" name="XPKMOVIE_COPY" description="" label="XPKMOVIE COPY" Schema="_utHfsJ3ZEeefTMjDv22V2g" clustered="true" unique="true" table="_utqSQJ3ZEeefTMjDv22V2g">
+    <members xmi:id="_uuO6AZ3ZEeefTMjDv22V2g" name="movie_copy_number" description="" column="_utqSQ53ZEeefTMjDv22V2g"/>
+    <members xmi:id="_uuO6Ap3ZEeefTMjDv22V2g" name="movie_number" description="" column="_utqSTJ3ZEeefTMjDv22V2g"/>
+  </LUW:LUWIndex>
+  <LUW:LUWIndex xmi:id="_uuO6A53ZEeefTMjDv22V2g" name="XAK1CUSTOMER" description="" label="XAK1CUSTOMER" Schema="_utHfsJ3ZEeefTMjDv22V2g" unique="true" table="_utmn4J3ZEeefTMjDv22V2g">
+    <members xmi:id="_uuO6BJ3ZEeefTMjDv22V2g" name="customer_address" description="" column="_utmn8J3ZEeefTMjDv22V2g"/>
+  </LUW:LUWIndex>
+  <LUW:LUWIndex xmi:id="_uuO6BZ3ZEeefTMjDv22V2g" name="XPKCREDIT_CARD" description="" label="XPKCREDIT CARD" Schema="_utHfsJ3ZEeefTMjDv22V2g" clustered="true" unique="true" table="_utrgbp3ZEeefTMjDv22V2g">
+    <members xmi:id="_uuO6Bp3ZEeefTMjDv22V2g" name="payment_transaction_number" description="" column="_utrgcZ3ZEeefTMjDv22V2g"/>
+  </LUW:LUWIndex>
+  <LUW:LUWIndex xmi:id="_uuO6B53ZEeefTMjDv22V2g" name="XPKMOVIE_STORE" description="" label="XPKMOVIE STORE" Schema="_utHfsJ3ZEeefTMjDv22V2g" clustered="true" unique="true" table="_utnO8J3ZEeefTMjDv22V2g">
+    <members xmi:id="_uuO6CJ3ZEeefTMjDv22V2g" name="movie_number" description="" column="_utnO853ZEeefTMjDv22V2g"/>
+    <members xmi:id="_uuO6CZ3ZEeefTMjDv22V2g" name="store_number" description="" column="_utnO9p3ZEeefTMjDv22V2g"/>
+  </LUW:LUWIndex>
+  <LUW:LUWIndex xmi:id="_uuO6Cp3ZEeefTMjDv22V2g" name="XPKMOVIE" description="" label="XPKMOVIE" Schema="_utHfsJ3ZEeefTMjDv22V2g" clustered="true" unique="true" table="_utpEIJ3ZEeefTMjDv22V2g">
+    <members xmi:id="_uuO6C53ZEeefTMjDv22V2g" name="movie_number" description="" column="_utpELZ3ZEeefTMjDv22V2g"/>
+  </LUW:LUWIndex>
+  <LUW:LUWIndex xmi:id="_uuO6DJ3ZEeefTMjDv22V2g" name="XIF1MOVIE_STORE" description="" label="XIF1MOVIE STORE" Schema="_utHfsJ3ZEeefTMjDv22V2g" table="_utnO8J3ZEeefTMjDv22V2g">
+    <members xmi:id="_uuO6DZ3ZEeefTMjDv22V2g" name="movie_number" description="" column="_utnO853ZEeefTMjDv22V2g"/>
+  </LUW:LUWIndex>
+  <LUW:LUWIndex xmi:id="_uuO6Dp3ZEeefTMjDv22V2g" name="XPKRECEIPT_OUTRIGGER" description="" label="Primary Key" Schema="_utHfsJ3ZEeefTMjDv22V2g" clustered="true" unique="true" table="_utmA0J3ZEeefTMjDv22V2g">
+    <members xmi:id="_uuO6D53ZEeefTMjDv22V2g" name="receipt_number" description="" column="_utmA053ZEeefTMjDv22V2g"/>
+  </LUW:LUWIndex>
+  <LUW:LUWIndex xmi:id="_uuO6EJ3ZEeefTMjDv22V2g" name="XIE1STORE" description="" label="XIE1STORE" Schema="_utHfsJ3ZEeefTMjDv22V2g" table="_uttVkJ3ZEeefTMjDv22V2g">
+    <members xmi:id="_uuO6EZ3ZEeefTMjDv22V2g" name="store_manager" description="" column="_uttVlp3ZEeefTMjDv22V2g"/>
+  </LUW:LUWIndex>
+  <LUW:LUWIndex xmi:id="_uuPhEJ3ZEeefTMjDv22V2g" name="XIF3MOVIE_RENTAL_RECORD" description="" label="XIF3MOVIE RENTAL RECORD" Schema="_utHfsJ3ZEeefTMjDv22V2g" table="_utsHcJ3ZEeefTMjDv22V2g">
+    <members xmi:id="_uuPhEZ3ZEeefTMjDv22V2g" name="soc_sec_number" description="" column="_utsug53ZEeefTMjDv22V2g"/>
+    <members xmi:id="_uuPhEp3ZEeefTMjDv22V2g" name="employee_phone" description="" column="_utsuhp3ZEeefTMjDv22V2g"/>
+  </LUW:LUWIndex>
+  <LUW:LUWIndex xmi:id="_uuPhE53ZEeefTMjDv22V2g" name="XPKMOVIE_RENTAL_RECORD" description="" label="XPKMOVIE RENTAL RECORD" Schema="_utHfsJ3ZEeefTMjDv22V2g" clustered="true" unique="true" table="_utsHcJ3ZEeefTMjDv22V2g">
+    <members xmi:id="_uuPhFJ3ZEeefTMjDv22V2g" name="rental_record_date" description="" column="_utsHc53ZEeefTMjDv22V2g"/>
+    <members xmi:id="_uuPhFZ3ZEeefTMjDv22V2g" name="customer_number" description="" column="_utsui53ZEeefTMjDv22V2g"/>
+    <members xmi:id="_uuPhFp3ZEeefTMjDv22V2g" name="soc_sec_number" description="" column="_utsug53ZEeefTMjDv22V2g"/>
+    <members xmi:id="_uuPhF53ZEeefTMjDv22V2g" name="employee_phone" description="" column="_utsuhp3ZEeefTMjDv22V2g"/>
+    <members xmi:id="_uuPhGJ3ZEeefTMjDv22V2g" name="movie_copy_number" description="" column="_utsHiJ3ZEeefTMjDv22V2g"/>
+    <members xmi:id="_uuPhGZ3ZEeefTMjDv22V2g" name="movie_number" description="" column="_utsugJ3ZEeefTMjDv22V2g"/>
+  </LUW:LUWIndex>
+  <LUW:LUWIndex xmi:id="_uuPhGp3ZEeefTMjDv22V2g" name="XPKE_PAYMENT" description="" label="XPKE-PAYMENT" Schema="_utHfsJ3ZEeefTMjDv22V2g" clustered="true" unique="true" table="_utiWcJ3ZEeefTMjDv22V2g">
+    <members xmi:id="_uuPhG53ZEeefTMjDv22V2g" name="payment_transaction_number" description="" column="_utiWc53ZEeefTMjDv22V2g"/>
+  </LUW:LUWIndex>
+  <LUW:LUWIndex xmi:id="_uuPhHJ3ZEeefTMjDv22V2g" name="XPKCUSTOMER" description="" label="XPKCUSTOMER" Schema="_utHfsJ3ZEeefTMjDv22V2g" clustered="true" unique="true" table="_utmn4J3ZEeefTMjDv22V2g">
+    <members xmi:id="_uuPhHZ3ZEeefTMjDv22V2g" name="customer_number" description="" column="_utmn453ZEeefTMjDv22V2g"/>
+  </LUW:LUWIndex>
+  <LUW:LUWIndex xmi:id="_uuPhHp3ZEeefTMjDv22V2g" name="XIF2PAYMENT" description="" label="XIF2PAYMENT" Schema="_utHfsJ3ZEeefTMjDv22V2g" table="_utq5UJ3ZEeefTMjDv22V2g">
+    <members xmi:id="_uuPhH53ZEeefTMjDv22V2g" name="employee_number" description="" column="_utq5ZZ3ZEeefTMjDv22V2g"/>
+  </LUW:LUWIndex>
+  <LUW:LUWIndex xmi:id="_uuPhIJ3ZEeefTMjDv22V2g" name="XPKPAYMENT" description="" label="XPKPAYMENT" Schema="_utHfsJ3ZEeefTMjDv22V2g" clustered="true" unique="true" table="_utq5UJ3ZEeefTMjDv22V2g">
+    <members xmi:id="_uuPhIZ3ZEeefTMjDv22V2g" name="payment_transaction_number" description="" column="_utq5Vp3ZEeefTMjDv22V2g"/>
+  </LUW:LUWIndex>
+</xmi:XMI>
