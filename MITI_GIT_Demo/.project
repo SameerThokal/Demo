@@ -7,6 +7,5 @@
 	<buildSpec>
 	</buildSpec>
 	<natures>
-		<nature>com.ibm.datatools.core.ui.DatabaseDesignNature</nature>
 	</natures>
 </projectDescription>
