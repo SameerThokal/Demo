@@ -1031,5 +1031,5 @@
   <LUW:LUWIndex xmi:id="_uuPhIJ3ZEeefTMjDv22V2g" name="XPKPAYMENT" description="" label="XPKPAYMENT" Schema="_utHfsJ3ZEeefTMjDv22V2g" clustered="true" unique="true" table="_utq5UJ3ZEeefTMjDv22V2g">
     <members xmi:id="_uuPhIZ3ZEeefTMjDv22V2g" name="payment_transaction_number" description="" column="_utq5Vp3ZEeefTMjDv22V2g"/>
   </LUW:LUWIndex>
-  <LUW:LUWTable xmi:id="_CSZnwJ3bEeeaKvj0TA0B_g" name="TEST" description="Document  Changes in Test table&#xD;&#xA;&#xD;&#xA; User 1 Second Change" schema="_utHfsJ3ZEeefTMjDv22V2g"/>
+  <LUW:LUWTable xmi:id="_CSZnwJ3bEeeaKvj0TA0B_g" name="TEST" description="Document  Changes in Test table&#xD;&#xA;&#xD;&#xA; User 1 Third Change" schema="_utHfsJ3ZEeefTMjDv22V2g"/>
 </xmi:XMI>
